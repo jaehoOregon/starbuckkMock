@@ -13,6 +13,7 @@
 		0345942D2938B4A100EAD3EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0345942B2938B4A100EAD3EA /* Main.storyboard */; };
 		0345942F2938B4A100EAD3EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0345942E2938B4A100EAD3EA /* Assets.xcassets */; };
 		034594322938B4A100EAD3EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034594302938B4A100EAD3EA /* LaunchScreen.storyboard */; };
+		0345943C2938B4CF00EAD3EA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0345943B2938B4CF00EAD3EA /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0345942E2938B4A100EAD3EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		034594312938B4A100EAD3EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		034594332938B4A100EAD3EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0345943B2938B4CF00EAD3EA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		034594242938B4A100EAD3EA /* starbuckkMock */ = {
 			isa = PBXGroup;
 			children = (
-				034594252938B4A100EAD3EA /* AppDelegate.swift */,
-				034594272938B4A100EAD3EA /* SceneDelegate.swift */,
+				034594392938B4AE00EAD3EA /* Delegate */,
 				034594292938B4A100EAD3EA /* ViewController.swift */,
+				0345943A2938B4C200EAD3EA /* Model */,
 				0345942B2938B4A100EAD3EA /* Main.storyboard */,
 				0345942E2938B4A100EAD3EA /* Assets.xcassets */,
 				034594302938B4A100EAD3EA /* LaunchScreen.storyboard */,
 				034594332938B4A100EAD3EA /* Info.plist */,
 			);
 			path = starbuckkMock;
+			sourceTree = "<group>";
+		};
+		034594392938B4AE00EAD3EA /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				034594252938B4A100EAD3EA /* AppDelegate.swift */,
+				034594272938B4A100EAD3EA /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		0345943A2938B4C200EAD3EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0345943B2938B4CF00EAD3EA /* Data.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +160,7 @@
 				0345942A2938B4A100EAD3EA /* ViewController.swift in Sources */,
 				034594262938B4A100EAD3EA /* AppDelegate.swift in Sources */,
 				034594282938B4A100EAD3EA /* SceneDelegate.swift in Sources */,
+				0345943C2938B4CF00EAD3EA /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
