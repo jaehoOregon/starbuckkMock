@@ -14,6 +14,14 @@
 		0345942F2938B4A100EAD3EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0345942E2938B4A100EAD3EA /* Assets.xcassets */; };
 		034594322938B4A100EAD3EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034594302938B4A100EAD3EA /* LaunchScreen.storyboard */; };
 		0345943C2938B4CF00EAD3EA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0345943B2938B4CF00EAD3EA /* Data.swift */; };
+		03459443293AEFC500EAD3EA /* OtherVCRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03459441293AEFC500EAD3EA /* OtherVCRecordTableViewCell.swift */; };
+		03459444293AEFC500EAD3EA /* OtherVCRecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03459442293AEFC500EAD3EA /* OtherVCRecordTableViewCell.xib */; };
+		03459447293AEFEF00EAD3EA /* OtherVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03459445293AEFEF00EAD3EA /* OtherVCTableViewCell.swift */; };
+		03459448293AEFEF00EAD3EA /* OtherVCTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03459446293AEFEF00EAD3EA /* OtherVCTableViewCell.xib */; };
+		0345944B293B4ADC00EAD3EA /* OtherVCCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03459449293B4ADC00EAD3EA /* OtherVCCollectionViewCell.swift */; };
+		0345944C293B4ADC00EAD3EA /* OtherVCCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0345944A293B4ADC00EAD3EA /* OtherVCCollectionViewCell.xib */; };
+		0345944E293B4C2F00EAD3EA /* OtherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0345944D293B4C2F00EAD3EA /* OtherVC.swift */; };
+		03459450293B4C9700EAD3EA /* otherVCData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0345944F293B4C9700EAD3EA /* otherVCData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		034594312938B4A100EAD3EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		034594332938B4A100EAD3EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0345943B2938B4CF00EAD3EA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		03459441293AEFC500EAD3EA /* OtherVCRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVCRecordTableViewCell.swift; sourceTree = "<group>"; };
+		03459442293AEFC500EAD3EA /* OtherVCRecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherVCRecordTableViewCell.xib; sourceTree = "<group>"; };
+		03459445293AEFEF00EAD3EA /* OtherVCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVCTableViewCell.swift; sourceTree = "<group>"; };
+		03459446293AEFEF00EAD3EA /* OtherVCTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherVCTableViewCell.xib; sourceTree = "<group>"; };
+		03459449293B4ADC00EAD3EA /* OtherVCCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVCCollectionViewCell.swift; sourceTree = "<group>"; };
+		0345944A293B4ADC00EAD3EA /* OtherVCCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherVCCollectionViewCell.xib; sourceTree = "<group>"; };
+		0345944D293B4C2F00EAD3EA /* OtherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVC.swift; sourceTree = "<group>"; };
+		0345944F293B4C9700EAD3EA /* otherVCData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otherVCData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,13 @@
 				034594292938B4A100EAD3EA /* ViewController.swift */,
 				0345943A2938B4C200EAD3EA /* Model */,
 				0345942B2938B4A100EAD3EA /* Main.storyboard */,
+				0345944D293B4C2F00EAD3EA /* OtherVC.swift */,
+				03459445293AEFEF00EAD3EA /* OtherVCTableViewCell.swift */,
+				03459446293AEFEF00EAD3EA /* OtherVCTableViewCell.xib */,
+				03459441293AEFC500EAD3EA /* OtherVCRecordTableViewCell.swift */,
+				03459442293AEFC500EAD3EA /* OtherVCRecordTableViewCell.xib */,
+				03459449293B4ADC00EAD3EA /* OtherVCCollectionViewCell.swift */,
+				0345944A293B4ADC00EAD3EA /* OtherVCCollectionViewCell.xib */,
 				0345942E2938B4A100EAD3EA /* Assets.xcassets */,
 				034594302938B4A100EAD3EA /* LaunchScreen.storyboard */,
 				034594332938B4A100EAD3EA /* Info.plist */,
@@ -82,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				0345943B2938B4CF00EAD3EA /* Data.swift */,
+				0345944F293B4C9700EAD3EA /* otherVCData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,8 +168,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03459444293AEFC500EAD3EA /* OtherVCRecordTableViewCell.xib in Resources */,
+				03459448293AEFEF00EAD3EA /* OtherVCTableViewCell.xib in Resources */,
 				034594322938B4A100EAD3EA /* LaunchScreen.storyboard in Resources */,
 				0345942F2938B4A100EAD3EA /* Assets.xcassets in Resources */,
+				0345944C293B4ADC00EAD3EA /* OtherVCCollectionViewCell.xib in Resources */,
 				0345942D2938B4A100EAD3EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,10 +184,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03459450293B4C9700EAD3EA /* otherVCData.swift in Sources */,
 				0345942A2938B4A100EAD3EA /* ViewController.swift in Sources */,
 				034594262938B4A100EAD3EA /* AppDelegate.swift in Sources */,
 				034594282938B4A100EAD3EA /* SceneDelegate.swift in Sources */,
+				0345944E293B4C2F00EAD3EA /* OtherVC.swift in Sources */,
+				03459443293AEFC500EAD3EA /* OtherVCRecordTableViewCell.swift in Sources */,
 				0345943C2938B4CF00EAD3EA /* Data.swift in Sources */,
+				0345944B293B4ADC00EAD3EA /* OtherVCCollectionViewCell.swift in Sources */,
+				03459447293AEFEF00EAD3EA /* OtherVCTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
