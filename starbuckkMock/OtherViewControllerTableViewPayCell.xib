@@ -90,7 +90,7 @@
                         </constraints>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JKC-BE-fRb">
-                        <rect key="frame" x="28" y="137.66666666666666" width="122" height="60"/>
+                        <rect key="frame" x="29" y="137.66666666666666" width="122" height="60"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FoW-uF-xR4">
                                 <rect key="frame" x="0.0" y="0.0" width="37.666666666666664" height="60"/>
@@ -157,7 +157,7 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="JKC-BE-fRb" firstAttribute="leading" secondItem="5k7-x0-OQu" secondAttribute="leading" id="06V-B3-QKz"/>
+                    <constraint firstItem="JKC-BE-fRb" firstAttribute="leading" secondItem="5k7-x0-OQu" secondAttribute="leading" constant="1" id="06V-B3-QKz"/>
                     <constraint firstItem="apl-g0-eFQ" firstAttribute="leading" secondItem="5k7-x0-OQu" secondAttribute="trailing" constant="50" id="4A1-d6-kcM"/>
                     <constraint firstItem="LAK-fT-cSJ" firstAttribute="leading" secondItem="apl-g0-eFQ" secondAttribute="leading" id="8C6-Ac-OLv"/>
                     <constraint firstItem="5k7-x0-OQu" firstAttribute="top" secondItem="KF2-Rl-Uf8" secondAttribute="bottom" constant="15" id="8Lz-Fh-w74"/>
@@ -171,7 +171,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="138.1679389312977" y="47.535211267605639"/>
+            <point key="canvasLocation" x="-193" y="40"/>
         </tableViewCell>
     </objects>
     <resources>

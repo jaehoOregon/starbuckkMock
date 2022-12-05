@@ -32,6 +32,8 @@ class OtherVC: UIViewController {
         
         otherVCTableView.register(CustomerServiceTableViewCell().nib(), forCellReuseIdentifier: CustomerServiceTableViewCell().cellId)
 
+        otherVCTableView.register(UINib(nibName: "TableViewFooterView", bundle: nil), forHeaderFooterViewReuseIdentifier: "TableViewFooterView")
+        
     }
 }
 
@@ -62,7 +64,6 @@ extension OtherVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 6
-
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -89,6 +90,14 @@ extension OtherVC: UITableViewDataSource {
         default:
             return UITableViewCell()
         }
+    }
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 80
+    }
+ 
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "TableViewFooterView") as! TableViewFooterView
+        return footerView
     }
 }
 
