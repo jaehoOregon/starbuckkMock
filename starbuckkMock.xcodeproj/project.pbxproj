@@ -23,6 +23,11 @@
 		03459450293B4C9700EAD3EA /* otherVCData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0345944F293B4C9700EAD3EA /* otherVCData.swift */; };
 		03459452293C647500EAD3EA /* OtherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03459451293C647500EAD3EA /* OtherVC.swift */; };
 		03459454293C64C900EAD3EA /* otherVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03459453293C64C900EAD3EA /* otherVCModel.swift */; };
+		0348EED0293D858C0095EDD5 /* TableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0348EECF293D858C0095EDD5 /* TableViewHeaderView.xib */; };
+		0348EED2293D85A20095EDD5 /* TableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348EED1293D85A20095EDD5 /* TableViewHeaderView.swift */; };
+		0348EED6293DB4280095EDD5 /* cupInHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 0348EED5293DB4280095EDD5 /* cupInHand.png */; };
+		0348EED9293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348EED7293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.swift */; };
+		0348EEDA293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0348EED8293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.xib */; };
 		03DE2E87293C65C000C33470 /* OtherVCTableViewCellNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE2E85293C65C000C33470 /* OtherVCTableViewCellNew.swift */; };
 		03DE2E88293C65C000C33470 /* OtherVCTableViewCellNew.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DE2E86293C65C000C33470 /* OtherVCTableViewCellNew.xib */; };
 		03DE2E8B293C65E800C33470 /* OtherVCFirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE2E89293C65E800C33470 /* OtherVCFirstTableViewCell.swift */; };
@@ -49,6 +54,11 @@
 		0345944F293B4C9700EAD3EA /* otherVCData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otherVCData.swift; sourceTree = "<group>"; };
 		03459451293C647500EAD3EA /* OtherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVC.swift; sourceTree = "<group>"; };
 		03459453293C64C900EAD3EA /* otherVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otherVCModel.swift; sourceTree = "<group>"; };
+		0348EECF293D858C0095EDD5 /* TableViewHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewHeaderView.xib; sourceTree = "<group>"; };
+		0348EED1293D85A20095EDD5 /* TableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeaderView.swift; sourceTree = "<group>"; };
+		0348EED5293DB4280095EDD5 /* cupInHand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cupInHand.png; sourceTree = "<group>"; };
+		0348EED7293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewControllerTableViewPayCell.swift; sourceTree = "<group>"; };
+		0348EED8293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherViewControllerTableViewPayCell.xib; sourceTree = "<group>"; };
 		03DE2E85293C65C000C33470 /* OtherVCTableViewCellNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVCTableViewCellNew.swift; sourceTree = "<group>"; };
 		03DE2E86293C65C000C33470 /* OtherVCTableViewCellNew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherVCTableViewCellNew.xib; sourceTree = "<group>"; };
 		03DE2E89293C65E800C33470 /* OtherVCFirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVCFirstTableViewCell.swift; sourceTree = "<group>"; };
@@ -90,13 +100,18 @@
 				034594292938B4A100EAD3EA /* ViewController.swift */,
 				0345943A2938B4C200EAD3EA /* Model */,
 				0345942B2938B4A100EAD3EA /* Main.storyboard */,
+				0348EED1293D85A20095EDD5 /* TableViewHeaderView.swift */,
+				0348EECF293D858C0095EDD5 /* TableViewHeaderView.xib */,
 				03459451293C647500EAD3EA /* OtherVC.swift */,
 				03DE2E89293C65E800C33470 /* OtherVCFirstTableViewCell.swift */,
 				03DE2E8A293C65E800C33470 /* OtherVCFirstTableViewCell.xib */,
+				0348EED7293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.swift */,
+				0348EED8293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.xib */,
 				03DE2E85293C65C000C33470 /* OtherVCTableViewCellNew.swift */,
 				03DE2E86293C65C000C33470 /* OtherVCTableViewCellNew.xib */,
 				03459459293C657500EAD3EA /* New Group */,
 				0345942E2938B4A100EAD3EA /* Assets.xcassets */,
+				0348EED5293DB4280095EDD5 /* cupInHand.png */,
 				03DE2E8D293C6DE200C33470 /* backgroundCupImage.jpeg */,
 				034594302938B4A100EAD3EA /* LaunchScreen.storyboard */,
 				034594332938B4A100EAD3EA /* Info.plist */,
@@ -196,13 +211,16 @@
 			files = (
 				03459444293AEFC500EAD3EA /* OtherVCRecordTableViewCell.xib in Resources */,
 				03459448293AEFEF00EAD3EA /* OtherVCTableViewCell.xib in Resources */,
+				0348EEDA293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.xib in Resources */,
 				03DE2E88293C65C000C33470 /* OtherVCTableViewCellNew.xib in Resources */,
 				034594322938B4A100EAD3EA /* LaunchScreen.storyboard in Resources */,
 				03DE2E8C293C65E800C33470 /* OtherVCFirstTableViewCell.xib in Resources */,
 				0345942F2938B4A100EAD3EA /* Assets.xcassets in Resources */,
+				0348EED6293DB4280095EDD5 /* cupInHand.png in Resources */,
 				0345944C293B4ADC00EAD3EA /* OtherVCCollectionViewCell.xib in Resources */,
 				03DE2E8E293C6DE200C33470 /* backgroundCupImage.jpeg in Resources */,
 				0345942D2938B4A100EAD3EA /* Main.storyboard in Resources */,
+				0348EED0293D858C0095EDD5 /* TableViewHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +236,8 @@
 				0345942A2938B4A100EAD3EA /* ViewController.swift in Sources */,
 				034594262938B4A100EAD3EA /* AppDelegate.swift in Sources */,
 				03DE2E8B293C65E800C33470 /* OtherVCFirstTableViewCell.swift in Sources */,
+				0348EED2293D85A20095EDD5 /* TableViewHeaderView.swift in Sources */,
+				0348EED9293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.swift in Sources */,
 				034594282938B4A100EAD3EA /* SceneDelegate.swift in Sources */,
 				03459443293AEFC500EAD3EA /* OtherVCRecordTableViewCell.swift in Sources */,
 				0345943C2938B4CF00EAD3EA /* Data.swift in Sources */,
