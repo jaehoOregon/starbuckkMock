@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03289DB4293E2C3B00BEFA41 /* CustomerServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03289DB2293E2C3B00BEFA41 /* CustomerServiceTableViewCell.swift */; };
+		03289DB5293E2C3B00BEFA41 /* CustomerServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03289DB3293E2C3B00BEFA41 /* CustomerServiceTableViewCell.xib */; };
 		034594262938B4A100EAD3EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034594252938B4A100EAD3EA /* AppDelegate.swift */; };
 		034594282938B4A100EAD3EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034594272938B4A100EAD3EA /* SceneDelegate.swift */; };
 		0345942A2938B4A100EAD3EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034594292938B4A100EAD3EA /* ViewController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03289DB2293E2C3B00BEFA41 /* CustomerServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceTableViewCell.swift; sourceTree = "<group>"; };
+		03289DB3293E2C3B00BEFA41 /* CustomerServiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerServiceTableViewCell.xib; sourceTree = "<group>"; };
 		034594222938B4A100EAD3EA /* starbuckkMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starbuckkMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		034594252938B4A100EAD3EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		034594272938B4A100EAD3EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 				0348EEE0293DD6E40095EDD5 /* ShopTableViewCell.xib */,
 				0348EEE3293DD9AF0095EDD5 /* DeliverTableViewCell.swift */,
 				0348EEE4293DD9AF0095EDD5 /* DeliverTableViewCell.xib */,
+				03289DB2293E2C3B00BEFA41 /* CustomerServiceTableViewCell.swift */,
+				03289DB3293E2C3B00BEFA41 /* CustomerServiceTableViewCell.xib */,
 				03459459293C657500EAD3EA /* 안쓰는것들 */,
 				0345942E2938B4A100EAD3EA /* Assets.xcassets */,
 				0348EED5293DB4280095EDD5 /* cupInHand.png */,
@@ -242,6 +248,7 @@
 				03DE2E8E293C6DE200C33470 /* backgroundCupImage.jpeg in Resources */,
 				0345942D2938B4A100EAD3EA /* Main.storyboard in Resources */,
 				0348EED0293D858C0095EDD5 /* TableViewHeaderView.xib in Resources */,
+				03289DB5293E2C3B00BEFA41 /* CustomerServiceTableViewCell.xib in Resources */,
 				0348EEDE293DD06D0095EDD5 /* OrderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +271,7 @@
 				0348EED9293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.swift in Sources */,
 				034594282938B4A100EAD3EA /* SceneDelegate.swift in Sources */,
 				03459443293AEFC500EAD3EA /* OtherVCRecordTableViewCell.swift in Sources */,
+				03289DB4293E2C3B00BEFA41 /* CustomerServiceTableViewCell.swift in Sources */,
 				0345943C2938B4CF00EAD3EA /* Data.swift in Sources */,
 				03459452293C647500EAD3EA /* OtherVC.swift in Sources */,
 				03DE2E87293C65C000C33470 /* OtherVCTableViewCellNew.swift in Sources */,

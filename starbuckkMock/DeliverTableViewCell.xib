@@ -90,7 +90,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="p8M-NH-nBJ">
-                        <rect key="frame" x="234" y="62.666666666666657" width="100" height="60"/>
+                        <rect key="frame" x="213" y="62.666666666666657" width="100" height="60"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PdR-Du-zfM">
                                 <rect key="frame" x="0.0" y="0.0" width="20.666666666666668" height="60"/>
@@ -111,7 +111,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장바구니" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbH-hX-isl">
-                                <rect key="frame" x="30.666666666666679" y="0.0" width="69.333333333333314" height="60"/>
+                                <rect key="frame" x="30.66666666666665" y="0.0" width="69.333333333333314" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -124,7 +124,7 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="p8M-NH-nBJ" firstAttribute="leading" secondItem="uAC-hv-H6g" secondAttribute="trailing" constant="84" id="KRo-ww-6uh"/>
+                    <constraint firstItem="p8M-NH-nBJ" firstAttribute="leading" secondItem="uAC-hv-H6g" secondAttribute="trailing" constant="63" id="KRo-ww-6uh"/>
                     <constraint firstItem="p8M-NH-nBJ" firstAttribute="top" secondItem="scy-GU-WYN" secondAttribute="bottom" constant="15" id="U3c-vQ-XKY"/>
                     <constraint firstItem="U3g-wh-sSh" firstAttribute="top" secondItem="uAC-hv-H6g" secondAttribute="bottom" constant="15" id="kSS-MO-ZhC"/>
                     <constraint firstItem="uAC-hv-H6g" firstAttribute="top" secondItem="scy-GU-WYN" secondAttribute="bottom" constant="15" id="lER-fa-Scr"/>

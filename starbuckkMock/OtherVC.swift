@@ -29,6 +29,8 @@ class OtherVC: UIViewController {
         otherVCTableView.register(ShopTableViewCell().nib(), forCellReuseIdentifier: ShopTableViewCell().cellId)
         
         otherVCTableView.register(DeliverTableViewCell().nib(), forCellReuseIdentifier: DeliverTableViewCell().cellId)
+        
+        otherVCTableView.register(CustomerServiceTableViewCell().nib(), forCellReuseIdentifier: CustomerServiceTableViewCell().cellId)
 
     }
 }
@@ -38,6 +40,8 @@ extension OtherVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
             return 400
+        } else if indexPath.row == 5 {
+            return 300
         } else {
             return 220
         }
@@ -57,7 +61,7 @@ extension OtherVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 6
 
     }
     
@@ -79,7 +83,9 @@ extension OtherVC: UITableViewDataSource {
         case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: "DeliverTableViewCell") as! DeliverTableViewCell
             return cell
-
+        case 5:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CustomerServiceTableViewCell") as! CustomerServiceTableViewCell
+            return cell
         default:
             return UITableViewCell()
         }
