@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="222" id="KGk-i7-Jjw" customClass="ShopTableViewCell" customModule="starbuckkMock" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="222"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="222"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfi-AY-IUL">
+                        <rect key="frame" x="25" y="20" width="377" height="27.666666666666671"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VI3-OA-u8B">
+                        <rect key="frame" x="28" y="62.666666666666657" width="165" height="60"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EeA-Ff-pVX">
+                                <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box.truck" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OSO-iu-46I">
+                                        <rect key="frame" x="4.6666666666666643" y="14.666666666666673" width="32" height="31.666666666666671"/>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="30y-lM-HpA"/>
+                                            <constraint firstAttribute="height" constant="32" id="h7R-WT-TcK"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="OSO-iu-46I" firstAttribute="centerY" secondItem="EeA-Ff-pVX" secondAttribute="centerY" id="Uh9-yL-OCS"/>
+                                    <constraint firstItem="OSO-iu-46I" firstAttribute="centerX" secondItem="EeA-Ff-pVX" secondAttribute="centerX" id="odI-yW-Oh2"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="온라인 스토어 주문내역" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C25-d9-YhN">
+                                <rect key="frame" x="51.333333333333321" y="0.0" width="113.66666666666669" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="165" id="0cq-oe-x8a"/>
+                            <constraint firstAttribute="height" constant="60" id="lkq-5c-OZW"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2T7-LS-3tI">
+                        <rect key="frame" x="208" y="62.666666666666657" width="140" height="60"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfh-aW-Yv9">
+                                <rect key="frame" x="0.0" y="0.0" width="30.666666666666668" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gift" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HcR-8t-cXm">
+                                        <rect key="frame" x="-0.66666666666665719" y="14.000000000000004" width="32" height="31.333333333333339"/>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="Z0Q-B0-eGt"/>
+                                            <constraint firstAttribute="height" constant="32" id="mV3-QB-xi4"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="HcR-8t-cXm" firstAttribute="centerY" secondItem="Lfh-aW-Yv9" secondAttribute="centerY" id="s23-9m-WzO"/>
+                                    <constraint firstItem="HcR-8t-cXm" firstAttribute="centerX" secondItem="Lfh-aW-Yv9" secondAttribute="centerX" id="vz8-qc-5my"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e-Gift Item 선물함" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h16-my-XkI">
+                                <rect key="frame" x="40.66666666666665" y="0.0" width="99.333333333333314" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="edy-6H-TnO"/>
+                            <constraint firstAttribute="width" constant="140" id="ixi-5x-jkT"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wMx-l5-3Bw">
+                        <rect key="frame" x="28" y="137.66666666666666" width="154" height="60"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bW4-v9-10w">
+                                <rect key="frame" x="0.0" y="0.0" width="41" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giftcard" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YLw-aA-whu">
+                                        <rect key="frame" x="4.6666666666666643" y="15.999999999999998" width="32" height="28"/>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="WXx-hE-pNj"/>
+                                            <constraint firstAttribute="height" constant="32" id="XbX-uP-x1l"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="YLw-aA-whu" firstAttribute="centerX" secondItem="bW4-v9-10w" secondAttribute="centerX" id="3en-mf-LGg"/>
+                                    <constraint firstItem="YLw-aA-whu" firstAttribute="centerY" secondItem="bW4-v9-10w" secondAttribute="centerY" id="yR6-F9-1HO"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e-Gift Card 선물내역" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPH-Vm-hp3">
+                                <rect key="frame" x="51" y="0.0" width="103" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="154" id="YY9-fX-0Wq"/>
+                            <constraint firstAttribute="height" constant="60" id="ueo-Ua-N9M"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wMx-l5-3Bw" firstAttribute="leading" secondItem="VI3-OA-u8B" secondAttribute="leading" id="8vX-ut-eo9"/>
+                    <constraint firstItem="gfi-AY-IUL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="9B3-Ws-WU6"/>
+                    <constraint firstAttribute="trailing" secondItem="gfi-AY-IUL" secondAttribute="trailing" constant="25" id="HXn-Ip-YJG"/>
+                    <constraint firstItem="VI3-OA-u8B" firstAttribute="leading" secondItem="gfi-AY-IUL" secondAttribute="leading" constant="3" id="SoI-pm-lC8"/>
+                    <constraint firstItem="wMx-l5-3Bw" firstAttribute="top" secondItem="VI3-OA-u8B" secondAttribute="bottom" constant="15" id="TJv-9q-Ncl"/>
+                    <constraint firstItem="2T7-LS-3tI" firstAttribute="top" secondItem="gfi-AY-IUL" secondAttribute="bottom" constant="15" id="Y1T-cX-ceC"/>
+                    <constraint firstItem="VI3-OA-u8B" firstAttribute="top" secondItem="gfi-AY-IUL" secondAttribute="bottom" constant="15" id="jBi-U7-XyH"/>
+                    <constraint firstItem="gfi-AY-IUL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="n96-Z6-MHi"/>
+                    <constraint firstItem="2T7-LS-3tI" firstAttribute="leading" secondItem="VI3-OA-u8B" secondAttribute="trailing" constant="15" id="sNb-FS-NRc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="136.64122137404578" y="50"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="box.truck" catalog="system" width="128" height="90"/>
+        <image name="gift" catalog="system" width="128" height="125"/>
+        <image name="giftcard" catalog="system" width="128" height="88"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

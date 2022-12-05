@@ -17,13 +17,16 @@ class OtherVC: UIViewController {
         
         otherVCTableView.delegate = self
         otherVCTableView.dataSource = self
-
         
         otherVCTableView.register(UINib(nibName: "TableViewHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "TableViewHeaderView")
-        
-        otherVCTableView.register(UINib(nibName: "OtherVCFirstTableViewCell", bundle: nil), forCellReuseIdentifier: "OtherVCFirstTableViewCell")
-        
-        otherVCTableView.register(UINib(nibName: "OtherViewControllerTableViewPayCell", bundle: nil), forCellReuseIdentifier: "OtherViewControllerTableViewPayCell")
+
+        otherVCTableView.register(OtherVCFirstTableViewCell().nib(), forCellReuseIdentifier: OtherVCFirstTableViewCell().cellId)
+
+        otherVCTableView.register(OtherViewControllerTableViewPayCell().nib(), forCellReuseIdentifier: OtherViewControllerTableViewPayCell().cellId)
+
+        otherVCTableView.register(OrderTableViewCell().nib(), forCellReuseIdentifier: OrderTableViewCell().cellId)
+
+        otherVCTableView.register(ShopTableViewCell().nib(), forCellReuseIdentifier: ShopTableViewCell().cellId)
 
     }
 }
@@ -34,7 +37,7 @@ extension OtherVC: UITableViewDelegate {
         if indexPath.row == 0 {
             return 400
         } else {
-            return 400
+            return 220
         }
     }
 }
@@ -52,17 +55,28 @@ extension OtherVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 4
 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
+        
+        switch indexPath.row {
+        case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "OtherVCFirstTableViewCell") as! OtherVCFirstTableViewCell
             return cell
-        } else {
+        case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "OtherViewControllerTableViewPayCell") as! OtherViewControllerTableViewPayCell
             return cell
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "OrderTableViewCell") as! OrderTableViewCell
+            return cell
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ShopTableViewCell") as! ShopTableViewCell
+            return cell
+
+        default:
+            return UITableViewCell()
         }
     }
 }

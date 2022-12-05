@@ -1,5 +1,5 @@
 //
-//  OtherViewControllerTableViewPayCell.swift
+//  ShopTableViewCell.swift
 //  starbuckkMock
 //
 //  Created by Jaeho Jung on 2022/12/05.
@@ -7,13 +7,13 @@
 
 import UIKit
 
-class OtherViewControllerTableViewPayCell: UITableViewCell {
-    
-    let cellId = "OtherViewControllerTableViewPayCell"
-    func nib() -> UINib {
-        return UINib(nibName: "OtherViewControllerTableViewPayCell", bundle: nil)
-    }
+class ShopTableViewCell: UITableViewCell {
 
+    let cellId = "ShopTableViewCell"
+    func nib() -> UINib {
+        return UINib(nibName: "ShopTableViewCell", bundle: nil)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

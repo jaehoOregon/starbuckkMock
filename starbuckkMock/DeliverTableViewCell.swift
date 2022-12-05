@@ -1,13 +1,13 @@
 //
-//  OtherVCRecordTableViewCell.swift
+//  DeliverTableViewCell.swift
 //  starbuckkMock
 //
-//  Created by Jaeho Jung on 2022/12/03.
+//  Created by Jaeho Jung on 2022/12/05.
 //
 
 import UIKit
 
-class OtherVCRecordTableViewCell: UITableViewCell {
+class DeliverTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

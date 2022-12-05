@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KF2-Rl-Uf8">
-                        <rect key="frame" x="25" y="20" width="330" height="27.666666666666671"/>
+                        <rect key="frame" x="25" y="20" width="325" height="27.666666666666671"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -162,7 +162,7 @@
                     <constraint firstItem="LAK-fT-cSJ" firstAttribute="leading" secondItem="apl-g0-eFQ" secondAttribute="leading" id="8C6-Ac-OLv"/>
                     <constraint firstItem="5k7-x0-OQu" firstAttribute="top" secondItem="KF2-Rl-Uf8" secondAttribute="bottom" constant="15" id="8Lz-Fh-w74"/>
                     <constraint firstItem="KF2-Rl-Uf8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Jqt-kd-3Hm"/>
-                    <constraint firstAttribute="trailing" secondItem="KF2-Rl-Uf8" secondAttribute="trailing" constant="20" id="MWm-Ul-ghl"/>
+                    <constraint firstAttribute="trailing" secondItem="KF2-Rl-Uf8" secondAttribute="trailing" constant="25" id="MWm-Ul-ghl"/>
                     <constraint firstItem="KF2-Rl-Uf8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="e9U-uA-Ujo"/>
                     <constraint firstItem="5k7-x0-OQu" firstAttribute="leading" secondItem="KF2-Rl-Uf8" secondAttribute="leading" constant="3" id="f9K-Ka-xq8"/>
                     <constraint firstItem="apl-g0-eFQ" firstAttribute="top" secondItem="KF2-Rl-Uf8" secondAttribute="bottom" constant="15" id="lic-oH-jNO"/>

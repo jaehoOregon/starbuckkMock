@@ -1,17 +1,18 @@
 //
-//  OtherVCTableViewCell.swift
+//  OrderTableViewCell.swift
 //  starbuckkMock
 //
-//  Created by Jaeho Jung on 2022/12/03.
+//  Created by Jaeho Jung on 2022/12/05.
 //
 
 import UIKit
 
-class OtherVCTableViewCell: UITableViewCell {
-
+class OrderTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var cellTitle: UILabel!
-    @IBOutlet weak var cellCollectionView: UICollectionView!
+    let cellId = "OrderTableViewCell"
+    func nib() -> UINib {
+        return UINib(nibName: "OrderTableViewCell", bundle: nil)
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

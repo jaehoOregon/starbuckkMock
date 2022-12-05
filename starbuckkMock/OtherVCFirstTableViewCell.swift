@@ -12,11 +12,14 @@
 import UIKit
 
 class OtherVCFirstTableViewCell: UITableViewCell {
-
+    
+    let cellId = "OtherVCFirstTableViewCell"
+    func nib() -> UINib {
+        return UINib(nibName: "OtherVCFirstTableViewCell", bundle: nil)
+    }
     
     @IBOutlet weak var firstCellTitle: UILabel!
 
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

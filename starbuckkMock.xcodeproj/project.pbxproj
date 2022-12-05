@@ -28,6 +28,12 @@
 		0348EED6293DB4280095EDD5 /* cupInHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 0348EED5293DB4280095EDD5 /* cupInHand.png */; };
 		0348EED9293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348EED7293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.swift */; };
 		0348EEDA293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0348EED8293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.xib */; };
+		0348EEDD293DD06D0095EDD5 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348EEDB293DD06D0095EDD5 /* OrderTableViewCell.swift */; };
+		0348EEDE293DD06D0095EDD5 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0348EEDC293DD06D0095EDD5 /* OrderTableViewCell.xib */; };
+		0348EEE1293DD6E40095EDD5 /* ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348EEDF293DD6E40095EDD5 /* ShopTableViewCell.swift */; };
+		0348EEE2293DD6E40095EDD5 /* ShopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0348EEE0293DD6E40095EDD5 /* ShopTableViewCell.xib */; };
+		0348EEE5293DD9AF0095EDD5 /* DeliverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348EEE3293DD9AF0095EDD5 /* DeliverTableViewCell.swift */; };
+		0348EEE6293DD9AF0095EDD5 /* DeliverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0348EEE4293DD9AF0095EDD5 /* DeliverTableViewCell.xib */; };
 		03DE2E87293C65C000C33470 /* OtherVCTableViewCellNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE2E85293C65C000C33470 /* OtherVCTableViewCellNew.swift */; };
 		03DE2E88293C65C000C33470 /* OtherVCTableViewCellNew.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DE2E86293C65C000C33470 /* OtherVCTableViewCellNew.xib */; };
 		03DE2E8B293C65E800C33470 /* OtherVCFirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE2E89293C65E800C33470 /* OtherVCFirstTableViewCell.swift */; };
@@ -59,6 +65,12 @@
 		0348EED5293DB4280095EDD5 /* cupInHand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cupInHand.png; sourceTree = "<group>"; };
 		0348EED7293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewControllerTableViewPayCell.swift; sourceTree = "<group>"; };
 		0348EED8293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherViewControllerTableViewPayCell.xib; sourceTree = "<group>"; };
+		0348EEDB293DD06D0095EDD5 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		0348EEDC293DD06D0095EDD5 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		0348EEDF293DD6E40095EDD5 /* ShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTableViewCell.swift; sourceTree = "<group>"; };
+		0348EEE0293DD6E40095EDD5 /* ShopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopTableViewCell.xib; sourceTree = "<group>"; };
+		0348EEE3293DD9AF0095EDD5 /* DeliverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliverTableViewCell.swift; sourceTree = "<group>"; };
+		0348EEE4293DD9AF0095EDD5 /* DeliverTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliverTableViewCell.xib; sourceTree = "<group>"; };
 		03DE2E85293C65C000C33470 /* OtherVCTableViewCellNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVCTableViewCellNew.swift; sourceTree = "<group>"; };
 		03DE2E86293C65C000C33470 /* OtherVCTableViewCellNew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherVCTableViewCellNew.xib; sourceTree = "<group>"; };
 		03DE2E89293C65E800C33470 /* OtherVCFirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVCFirstTableViewCell.swift; sourceTree = "<group>"; };
@@ -107,9 +119,13 @@
 				03DE2E8A293C65E800C33470 /* OtherVCFirstTableViewCell.xib */,
 				0348EED7293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.swift */,
 				0348EED8293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.xib */,
-				03DE2E85293C65C000C33470 /* OtherVCTableViewCellNew.swift */,
-				03DE2E86293C65C000C33470 /* OtherVCTableViewCellNew.xib */,
-				03459459293C657500EAD3EA /* New Group */,
+				0348EEDB293DD06D0095EDD5 /* OrderTableViewCell.swift */,
+				0348EEDC293DD06D0095EDD5 /* OrderTableViewCell.xib */,
+				0348EEDF293DD6E40095EDD5 /* ShopTableViewCell.swift */,
+				0348EEE0293DD6E40095EDD5 /* ShopTableViewCell.xib */,
+				0348EEE3293DD9AF0095EDD5 /* DeliverTableViewCell.swift */,
+				0348EEE4293DD9AF0095EDD5 /* DeliverTableViewCell.xib */,
+				03459459293C657500EAD3EA /* 안쓰는것들 */,
 				0345942E2938B4A100EAD3EA /* Assets.xcassets */,
 				0348EED5293DB4280095EDD5 /* cupInHand.png */,
 				03DE2E8D293C6DE200C33470 /* backgroundCupImage.jpeg */,
@@ -138,9 +154,11 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		03459459293C657500EAD3EA /* New Group */ = {
+		03459459293C657500EAD3EA /* 안쓰는것들 */ = {
 			isa = PBXGroup;
 			children = (
+				03DE2E85293C65C000C33470 /* OtherVCTableViewCellNew.swift */,
+				03DE2E86293C65C000C33470 /* OtherVCTableViewCellNew.xib */,
 				03459445293AEFEF00EAD3EA /* OtherVCTableViewCell.swift */,
 				03459446293AEFEF00EAD3EA /* OtherVCTableViewCell.xib */,
 				03459441293AEFC500EAD3EA /* OtherVCRecordTableViewCell.swift */,
@@ -148,7 +166,8 @@
 				03459449293B4ADC00EAD3EA /* OtherVCCollectionViewCell.swift */,
 				0345944A293B4ADC00EAD3EA /* OtherVCCollectionViewCell.xib */,
 			);
-			path = "New Group";
+			name = "안쓰는것들";
+			path = "안쓰는것들";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,17 +229,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				03459444293AEFC500EAD3EA /* OtherVCRecordTableViewCell.xib in Resources */,
+				0348EEE2293DD6E40095EDD5 /* ShopTableViewCell.xib in Resources */,
 				03459448293AEFEF00EAD3EA /* OtherVCTableViewCell.xib in Resources */,
 				0348EEDA293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.xib in Resources */,
 				03DE2E88293C65C000C33470 /* OtherVCTableViewCellNew.xib in Resources */,
 				034594322938B4A100EAD3EA /* LaunchScreen.storyboard in Resources */,
 				03DE2E8C293C65E800C33470 /* OtherVCFirstTableViewCell.xib in Resources */,
+				0348EEE6293DD9AF0095EDD5 /* DeliverTableViewCell.xib in Resources */,
 				0345942F2938B4A100EAD3EA /* Assets.xcassets in Resources */,
 				0348EED6293DB4280095EDD5 /* cupInHand.png in Resources */,
 				0345944C293B4ADC00EAD3EA /* OtherVCCollectionViewCell.xib in Resources */,
 				03DE2E8E293C6DE200C33470 /* backgroundCupImage.jpeg in Resources */,
 				0345942D2938B4A100EAD3EA /* Main.storyboard in Resources */,
 				0348EED0293D858C0095EDD5 /* TableViewHeaderView.xib in Resources */,
+				0348EEDE293DD06D0095EDD5 /* OrderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,9 +256,11 @@
 				03459450293B4C9700EAD3EA /* otherVCData.swift in Sources */,
 				03459454293C64C900EAD3EA /* otherVCModel.swift in Sources */,
 				0345942A2938B4A100EAD3EA /* ViewController.swift in Sources */,
+				0348EEE5293DD9AF0095EDD5 /* DeliverTableViewCell.swift in Sources */,
 				034594262938B4A100EAD3EA /* AppDelegate.swift in Sources */,
 				03DE2E8B293C65E800C33470 /* OtherVCFirstTableViewCell.swift in Sources */,
 				0348EED2293D85A20095EDD5 /* TableViewHeaderView.swift in Sources */,
+				0348EEDD293DD06D0095EDD5 /* OrderTableViewCell.swift in Sources */,
 				0348EED9293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.swift in Sources */,
 				034594282938B4A100EAD3EA /* SceneDelegate.swift in Sources */,
 				03459443293AEFC500EAD3EA /* OtherVCRecordTableViewCell.swift in Sources */,
@@ -245,6 +269,7 @@
 				03DE2E87293C65C000C33470 /* OtherVCTableViewCellNew.swift in Sources */,
 				0345944B293B4ADC00EAD3EA /* OtherVCCollectionViewCell.swift in Sources */,
 				03459447293AEFEF00EAD3EA /* OtherVCTableViewCell.swift in Sources */,
+				0348EEE1293DD6E40095EDD5 /* ShopTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
