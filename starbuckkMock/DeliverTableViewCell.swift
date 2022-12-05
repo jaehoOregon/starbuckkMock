@@ -9,6 +9,11 @@ import UIKit
 
 class DeliverTableViewCell: UITableViewCell {
 
+    let cellId = "DeliverTableViewCell"
+    func nib() -> UINib {
+        return UINib(nibName: "DeliverTableViewCell", bundle: nil)
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

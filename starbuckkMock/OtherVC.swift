@@ -27,6 +27,8 @@ class OtherVC: UIViewController {
         otherVCTableView.register(OrderTableViewCell().nib(), forCellReuseIdentifier: OrderTableViewCell().cellId)
 
         otherVCTableView.register(ShopTableViewCell().nib(), forCellReuseIdentifier: ShopTableViewCell().cellId)
+        
+        otherVCTableView.register(DeliverTableViewCell().nib(), forCellReuseIdentifier: DeliverTableViewCell().cellId)
 
     }
 }
@@ -55,7 +57,7 @@ extension OtherVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
 
     }
     
@@ -73,6 +75,9 @@ extension OtherVC: UITableViewDataSource {
             return cell
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ShopTableViewCell") as! ShopTableViewCell
+            return cell
+        case 4:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "DeliverTableViewCell") as! DeliverTableViewCell
             return cell
 
         default:
