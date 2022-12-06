@@ -128,7 +128,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t5d-5t-Sfe">
                                 <rect key="frame" x="0.0" y="0.0" width="33.666666666666664" height="60"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bin.xmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4eI-f3-Lgu">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark.bin" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4eI-f3-Lgu">
                                         <rect key="frame" x="1" y="15.666666666666663" width="32" height="29.000000000000007"/>
                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                         <constraints>
@@ -212,9 +212,9 @@
     <resources>
         <image name="arrow.triangle.2.circlepath.circle" catalog="system" width="128" height="123"/>
         <image name="bag" catalog="system" width="128" height="128"/>
-        <image name="bin.xmark" catalog="system" width="128" height="92"/>
         <image name="box.truck" catalog="system" width="128" height="90"/>
         <image name="humidifier" catalog="system" width="128" height="121"/>
+        <image name="xmark.bin" catalog="system" width="128" height="92"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

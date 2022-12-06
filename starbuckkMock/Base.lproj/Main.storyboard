@@ -86,21 +86,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DWE-BC-hiY">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2iI-OX-4a7">
+                                <rect key="frame" x="0.0" y="183" width="393" height="586"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Li5-IG-oCq">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="586"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEq-f8-CnJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="55.666666666666664"/>
+                                                <subviews>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cWV-W2-uPd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="243" height="56.666666666666664"/>
+                                                        <segments>
+                                                            <segment title="음료"/>
+                                                            <segment title="푸드"/>
+                                                            <segment title="상품"/>
+                                                        </segments>
+                                                    </segmentedControl>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="cWV-W2-uPd" secondAttribute="bottom" id="DOC-nk-laa"/>
+                                                    <constraint firstItem="cWV-W2-uPd" firstAttribute="top" secondItem="EEq-f8-CnJ" secondAttribute="top" id="Kab-mf-Tcs"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cWV-W2-uPd" secondAttribute="trailing" constant="150" id="jwi-hk-nQm"/>
+                                                    <constraint firstItem="cWV-W2-uPd" firstAttribute="leading" secondItem="EEq-f8-CnJ" secondAttribute="leading" id="mAc-cA-rcf"/>
+                                                </constraints>
+                                            </view>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g1C-oh-b8p">
+                                                <rect key="frame" x="0.0" y="55.666666666666686" width="393" height="530.33333333333326"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </tableView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                                <constraints>
+                                    <constraint firstItem="Li5-IG-oCq" firstAttribute="top" secondItem="2iI-OX-4a7" secondAttribute="top" id="VZH-12-FJP"/>
+                                    <constraint firstAttribute="bottom" secondItem="Li5-IG-oCq" secondAttribute="bottom" id="dyb-4f-Piu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Li5-IG-oCq" secondAttribute="trailing" id="e2v-oF-YLD"/>
+                                    <constraint firstItem="Li5-IG-oCq" firstAttribute="leading" secondItem="2iI-OX-4a7" secondAttribute="leading" id="pLA-37-L9Z"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jrw-up-tmM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="jrw-up-tmM" firstAttribute="trailing" secondItem="DWE-BC-hiY" secondAttribute="trailing" id="ORx-Tc-aTG"/>
-                            <constraint firstItem="DWE-BC-hiY" firstAttribute="top" secondItem="jrw-up-tmM" secondAttribute="top" id="Qep-0D-PIm"/>
-                            <constraint firstItem="DWE-BC-hiY" firstAttribute="leading" secondItem="jrw-up-tmM" secondAttribute="leading" id="iS7-7P-7NW"/>
-                            <constraint firstItem="jrw-up-tmM" firstAttribute="bottom" secondItem="DWE-BC-hiY" secondAttribute="bottom" id="lFw-is-YhD"/>
+                            <constraint firstItem="jrw-up-tmM" firstAttribute="bottom" secondItem="2iI-OX-4a7" secondAttribute="bottom" id="6PO-Bq-8u9"/>
+                            <constraint firstItem="jrw-up-tmM" firstAttribute="trailing" secondItem="2iI-OX-4a7" secondAttribute="trailing" id="RwW-7C-fV4"/>
+                            <constraint firstItem="2iI-OX-4a7" firstAttribute="leading" secondItem="jrw-up-tmM" secondAttribute="leading" id="esL-uE-kOj"/>
+                            <constraint firstItem="2iI-OX-4a7" firstAttribute="top" secondItem="jrw-up-tmM" secondAttribute="top" constant="80" id="wiX-Lt-xnK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KQF-tM-eLt"/>
+                    <connections>
+                        <outlet property="orderCategorySegmentControl" destination="cWV-W2-uPd" id="Ta9-nX-V3X"/>
+                        <outlet property="orderTableView" destination="g1C-oh-b8p" id="DW3-p0-Pjk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOH-SC-pHK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,11 +157,11 @@
                         <viewLayoutGuide key="safeArea" id="QCG-m2-lfP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Shop" image="handbag.fill" catalog="system" id="720-I2-Z1Y"/>
+                    <tabBarItem key="tabBarItem" title="Shop" image="bag" catalog="system" id="720-I2-Z1Y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e02-o9-MWU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2330.5343511450383" y="953.52112676056345"/>
+            <point key="canvasLocation" x="2731" y="954"/>
         </scene>
         <!--OtherVC-->
         <scene sceneID="2X5-5a-wzS">
@@ -197,10 +238,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bag" catalog="system" width="128" height="128"/>
         <image name="creditcard.fill" catalog="system" width="128" height="88"/>
         <image name="cup.and.saucer.fill" catalog="system" width="128" height="91"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
-        <image name="handbag.fill" catalog="system" width="128" height="116"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
