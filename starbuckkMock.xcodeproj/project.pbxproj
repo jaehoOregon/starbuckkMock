@@ -43,6 +43,7 @@
 		03DE2E8B293C65E800C33470 /* OtherVCFirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE2E89293C65E800C33470 /* OtherVCFirstTableViewCell.swift */; };
 		03DE2E8C293C65E800C33470 /* OtherVCFirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DE2E8A293C65E800C33470 /* OtherVCFirstTableViewCell.xib */; };
 		03DE2E8E293C6DE200C33470 /* backgroundCupImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 03DE2E8D293C6DE200C33470 /* backgroundCupImage.jpeg */; };
+		03F8A3B9293F1F90005ADF26 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8A3B8293F1F90005ADF26 /* OrderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		03DE2E89293C65E800C33470 /* OtherVCFirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVCFirstTableViewCell.swift; sourceTree = "<group>"; };
 		03DE2E8A293C65E800C33470 /* OtherVCFirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherVCFirstTableViewCell.xib; sourceTree = "<group>"; };
 		03DE2E8D293C6DE200C33470 /* backgroundCupImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundCupImage.jpeg; sourceTree = "<group>"; };
+		03F8A3B8293F1F90005ADF26 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				034594292938B4A100EAD3EA /* ViewController.swift */,
 				0345943A2938B4C200EAD3EA /* Model */,
 				0345942B2938B4A100EAD3EA /* Main.storyboard */,
+				03F8A3B8293F1F90005ADF26 /* OrderViewController.swift */,
 				03459451293C647500EAD3EA /* OtherVC.swift */,
 				0348EED1293D85A20095EDD5 /* TableViewHeaderView.swift */,
 				0348EECF293D858C0095EDD5 /* TableViewHeaderView.xib */,
@@ -278,6 +281,7 @@
 				0348EED9293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.swift in Sources */,
 				034594282938B4A100EAD3EA /* SceneDelegate.swift in Sources */,
 				03459443293AEFC500EAD3EA /* OtherVCRecordTableViewCell.swift in Sources */,
+				03F8A3B9293F1F90005ADF26 /* OrderViewController.swift in Sources */,
 				03346E8E293E333400F00CEB /* TableViewFooterView.swift in Sources */,
 				03289DB4293E2C3B00BEFA41 /* CustomerServiceTableViewCell.swift in Sources */,
 				0345943C2938B4CF00EAD3EA /* Data.swift in Sources */,
