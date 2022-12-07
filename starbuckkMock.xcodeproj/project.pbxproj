@@ -120,6 +120,8 @@
 				0348EEE0293DD6E40095EDD5 /* ShopTableViewCell.xib */,
 				0348EEE3293DD9AF0095EDD5 /* DeliverTableViewCell.swift */,
 				0348EEE4293DD9AF0095EDD5 /* DeliverTableViewCell.xib */,
+				03289DB2293E2C3B00BEFA41 /* CustomerServiceTableViewCell.swift */,
+				03289DB3293E2C3B00BEFA41 /* CustomerServiceTableViewCell.xib */,
 			);
 			path = OtherViewControllerTableViewCells;
 			sourceTree = "<group>";
@@ -155,8 +157,6 @@
 				03DE2E89293C65E800C33470 /* OtherVCFirstTableViewCell.swift */,
 				03DE2E8A293C65E800C33470 /* OtherVCFirstTableViewCell.xib */,
 				033E8C65294114EE009F3082 /* OtherViewControllerTableViewCells */,
-				03289DB2293E2C3B00BEFA41 /* CustomerServiceTableViewCell.swift */,
-				03289DB3293E2C3B00BEFA41 /* CustomerServiceTableViewCell.xib */,
 				03346E8D293E333400F00CEB /* TableViewFooterView.swift */,
 				03346E8B293E330700F00CEB /* TableViewFooterView.xib */,
 				03459459293C657500EAD3EA /* 안쓰는것들 */,
