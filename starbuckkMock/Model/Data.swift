@@ -14,6 +14,7 @@
 import Foundation
 import UIKit
 
+// MARK: Drink 데이터
 struct Drink {
     let category: DrinkCategory
     let tempOption: TempOption
@@ -54,20 +55,6 @@ enum DrinkCategory: Int {
         let options = ["Reserve Espresso", "Reserve Drip", "Starbucks Refresher", "Cold Brew", "Blonde Coffee", "Espresso", "Decaf Coffee", "Frappuccino", "Blended", "Starbucks fizzio", "Brewed Coffee", "Others", "RTD"]
         return options[index]
     }
-}
-
-struct Food {
-    let category: String
-    let nameKor: String
-    let nameEng: String
-    let price: Int
-    let flavorNote: String
-    let notes: String
-    let image: UIImage
-    let nutritionInfo: NutritionInfo
-    let alergicFactors: [String]
-    let detailedInfo: [String:String]
-    let similarFood: [Food?]
 }
 
 struct NutritionInfo {
@@ -167,5 +154,20 @@ var drinkStorage: [Drink] = [
     Drink(category: .Espresso, tempOption: .hotAndIced, nameKor: "토피 넛 라떼", nameEng: "Toffee Nut Latter", price: 6100, flavorNote: "", notes: "스타벅스의 겨울 시그니쳐 음료 버터 향이 은은하게 느껴지는 토피와 고소한 견과류의 풍미, 진한 에스프레소가 어우러진 크리스마스 시즌 음료", image: nil, nutritions: NutritionInfo.init(size: .tall, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 190, saturatedFat: 0, warning: .highCaffeine)/* NutritionInfo(size: .grande, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 250, saturatedFat: 0, warning: .highCaffeine)*/, allergens: ["우유"], similarDrink: nil, alert: .couldBeDifferent),
     Drink(category: .Espresso, tempOption: .hotAndIced, nameKor: "카페 모카", nameEng: "Caffe Mocha", price: 5500, flavorNote: "", notes: "진한 초콜릿 모카 시럽과 풍부한 에스프레소를 스팀 밀크와 섞어 휘핑크림으로 마무리한 음료로 진한 에스프레소와 초콜릿 맛이 어우러진 커피", image: nil, nutritions: NutritionInfo.init(size: .short, calory: 200, carbohydrate: 22, sugars: 17, natrium: 65, protein: 7, fat: 11, cholestrol: 35, transfat: 0, caffeine: 90, saturatedFat: 6, warning: .highCaffeine)/*NutritionInfo(size: .tall, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 190, saturatedFat: 0, warning: .highCaffeine), NutritionInfo(size: .grande, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 250, saturatedFat: 0, warning: .highCaffeine), NutritionInfo(size: .Venti, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 250, saturatedFat: 0, warning: .highCaffeine) */, allergens: ["우유"], similarDrink: nil, alert: .personOption)
     ]
+
+// MARK: Food 데이터
+struct Food {
+    let category: String
+    let nameKor: String
+    let nameEng: String
+    let price: Int
+    let flavorNote: String
+    let notes: String
+    let image: UIImage
+    let nutritionInfo: NutritionInfo
+    let alergicFactors: [String]
+    let detailedInfo: [String:String]
+    let similarFood: [Food?]
+}
 
 
