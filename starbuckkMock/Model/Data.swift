@@ -30,7 +30,7 @@ struct Drink {
     let alert: Alert
 }
 
-enum DrinkCategory: Int {
+enum DrinkCategory: Int, CaseIterable {
     case reserveEspresso = 0
     case reserveDrip = 1
     case starbucksRefreshers = 2
@@ -38,7 +38,7 @@ enum DrinkCategory: Int {
     case blondBrew = 4
     case Espresso = 5
     case decafCoffee = 6
-    case grappuccino = 7
+    case prappuccino = 7
     case blendid = 8
     case starbucksfizzio = 9
     case teavana = 10
@@ -46,15 +46,79 @@ enum DrinkCategory: Int {
     case others = 12
     case rtd = 13
     
-    func toStringKor(_ index: Int) -> String {
-        let options = ["리저브 에스프레소", "리저브 드립", "리프레셔", "콜드 브루", "블론드", "에스프레소", "디카페인 커피", "프라푸치노", "블렌디드", "피지오", "브루드 커피", "아포가토/기타", "병음료"]
-        return options[index]
+    var drinkCategoryKorean: String {
+        switch self {
+            
+        case .reserveEspresso: return "리저브 에스프레소"
+        case .reserveDrip: return "리저브 드립"
+        case .starbucksRefreshers: return "리스레셔"
+        case .coldBrew: return "콜드 브루"
+        case .blondBrew: return "블론드"
+        case .Espresso: return "에스프레소"
+        case .decafCoffee: return "디카페인 커피"
+        case .prappuccino: return "프라푸치노"
+        case .blendid: return "블린디드"
+        case .starbucksfizzio: return "피지오"
+        case .teavana: return "티바나"
+        case .brewedCoffee: return "브루드 커피"
+        case .others: return "아포가토/기타"
+        case .rtd: return "병음료"
+            
+        }
+    }
+            
+    var drinkCategoryEnglish: String {
+        switch self {
+            
+        case .reserveEspresso: return "Reserve Espresso"
+        case .reserveDrip: return "Reserve Drip"
+        case .starbucksRefreshers: return "Starbucks Refresher"
+        case .coldBrew: return "Cold Brew"
+        case .blondBrew: return "Blonde Coffee"
+        case .Espresso: return "Espresso"
+        case .decafCoffee: return "Decaf Coffee"
+        case .prappuccino: return "Frappuccino"
+        case .blendid: return "Blended"
+        case .starbucksfizzio: return "Starbucks fizzio"
+        case .teavana: return "Teavana"
+        case .brewedCoffee: return "Brewed Coffee"
+        case .others: return "Others"
+        case .rtd: return "RTD"
+            
+        }
     }
     
-    func toStringEng(_ index: Int) -> String {
-        let options = ["Reserve Espresso", "Reserve Drip", "Starbucks Refresher", "Cold Brew", "Blonde Coffee", "Espresso", "Decaf Coffee", "Frappuccino", "Blended", "Starbucks fizzio", "Brewed Coffee", "Others", "RTD"]
-        return options[index]
+    /*test*/
+    var drinkCategoryTitles: [String] {
+        switch self {
+
+        case .reserveEspresso: return ["리저브 에스프레소", "Reserve Espresso"]
+        case .reserveDrip: return ["리저브 드립", "Reserve Drip"]
+        case .starbucksRefreshers: return ["리프레셔", "Starbucks Refresher"]
+        case .coldBrew: return ["콜드 브루", "Cold Brew"]
+        case .blondBrew: return ["블론드", "Blonde Coffee"]
+        case .Espresso: return ["에스프레소", "Espresso"]
+        case .decafCoffee: return ["디카페인 커피", "Decaf Coffee"]
+        case .prappuccino: return ["프라푸치노", "Frappuccino"]
+        case .blendid: return ["블렌디드", "Blended"]
+        case .starbucksfizzio: return ["피지오", "Starbucks fizzio"]
+        case .teavana: return ["티바나", "Teavana"]
+        case .brewedCoffee: return ["브루드 커피", "Brewed Coffee"]
+        case .others: return ["아포가토/기타", "Others"]
+        case .rtd: return ["병음료", "RTD"]
+        }
     }
+    
+//    func toStringKor(_ index: Int) -> String {
+//        let options = ["리저브 에스프레소", "리저브 드립", "리프레셔", "콜드 브루", "블론드", "에스프레소", "디카페인 커피", "프라푸치노", "블렌디드", "피지오", "티바나", "브루드 커피", "아포가토/기타", "병음료"]
+//        return options[index]
+//    }
+//
+//    func toStringEng(_ index: Int) -> String {
+//        let options = ["Reserve Espresso", "Reserve Drip", "Starbucks Refresher", "Cold Brew", "Blonde Coffee", "Espresso", "Decaf Coffee", "Frappuccino", "Blended", "Starbucks fizzio", "Brewed Coffee", "Others", "RTD"]
+//        return options[index]
+//    }
+    
 }
 
 struct NutritionInfo {
@@ -122,12 +186,39 @@ enum Alert: Int {
     }
 }
 
-struct MenuManager {
+class MenuManager {
+    
+    private var drinkList: [Drink]
+//    private var categoryList: [DrinkCategory, FoodCategory, GoodsCategory]
+    
+    init() {
+        self.drinkList = drinkStorage
+    }
 
     //var myMenu: [Drink, Food] = []
 
     //c
     //r
+    
+    // Q. 특정 장르에 속한 모든 노래를 줘야한다.
+    // Input) Genre: Int (Int->Genre)
+    // Ouput) [Song]
+    
+    // MARK: get drink
+//    func getDrinkMenu(from: DrinkCategory) -> [Drink] {
+//        return drinkList.filter { drink in
+//            drink.category == from
+//        }
+//    }
+
+    
+    // MARK: get drink menu by category
+    func getDrinkMenuByCategory(from: DrinkCategory) -> [Drink] {
+        return drinkList.filter { drink in
+            drink.category == from
+        }
+    }
+    
     //u
     //d
     
@@ -170,4 +261,136 @@ struct Food {
     let similarFood: [Food?]
 }
 
+enum FoodCategory: Int, CaseIterable {
+    case bread = 0
+    case cakeMinidessert = 1
+    case sandwichSalad = 2
+    case hotFood = 3
+    case fruitYogurt = 4
+    case snack = 5
+    case iceCream = 6
+    case staduimSet = 7
+    
+    var foodCategoryKorean: String {
+        switch self {
+            
+        case .bread: return "브레드"
+        case .cakeMinidessert: return "케이크&미니디저트"
+        case .sandwichSalad: return "샌드위치&샐러드"
+        case .hotFood: return "따뜻한 푸드"
+        case .fruitYogurt: return "과일&요거트"
+        case .snack: return "스낵"
+        case .iceCream: return "아이스크림"
+        case .staduimSet: return "스타디움 세트(창원NC파크)"
 
+        }
+    }
+            
+    var foodCategoryEnglish: String {
+        switch self {
+
+        case .bread: return "Brea"
+        case .cakeMinidessert: return "Cake&Mini Dessert"
+        case .sandwichSalad: return "Sandwich&Salad"
+        case .hotFood: return "Hot Food"
+        case .fruitYogurt: return "Fruit&Yogurt"
+        case .snack: return "Snack"
+        case .iceCream: return "Ice Cream"
+        case .staduimSet: return "Stadium Set"
+
+        }
+    }
+    
+    /*test*//*
+    var foodCategoryTitles: [String] {
+        switch self {
+
+        case .bread: return ["브레드", "Bread"]
+        case .cakeMinidessert: ["케이크&미니디저트", "Cake&Mini Dessert"]
+        case .sandwichSalad: return ["샌드위치&샐러드", "Sandwich&Salad"]
+        case .hotFood: return ["따뜻한 푸드", "Hot Food"]
+        case .fruitYogurt: return ["과일&요거트", "Fruit&Yogurt"]
+        case .snack: return ["스낵", "Snack"]
+        case .iceCream: return ["아이스크림", "Ice Cream"]
+        case .stadumSet: return ["스타디움 세트(창원NC파크)", "Stadium Set"]
+        
+        }
+    }*/
+}
+
+
+// MARK: Goods 데이터
+struct Goods {
+    let mug: String
+    let nameKor: String
+    let nameEng: String
+    let price: Int
+    let notes: String
+    let image: UIImage
+    let description: String
+    let useGuide: String
+    let detailedInfo: [String:String]
+    let refundPolicy: String
+}
+
+enum GoodsCategory: Int, CaseIterable {
+    case mug = 0
+    case stainlessSteelTumbler = 1
+    case plasticTumbler = 2
+    case vacuumFlask = 3
+    case acc = 4
+    case brewingItem = 5
+    case wholeBean = 6
+    case via = 7
+    case capsule = 8
+    case packagedTea = 9
+    case reserveWholeBean = 10
+    case syrub = 11
+    
+    var goodsCategoryKorean: String {
+        switch self {
+            
+        case .mug: return "머그/글라스"
+        case .stainlessSteelTumbler: return "스테인리스템블러"
+        case .plasticTumbler: return "플라스틱 텀블러"
+        case .vacuumFlask: return "보온병"
+        case .acc: return "액세서리"
+        case .brewingItem: return "커피용품"
+        case .wholeBean: return "원두"
+        case .via: return "비아"
+        case .capsule: return "스타벅스앳홈 by 캡슐"
+        case .packagedTea: return "패키지 티"
+        case .reserveWholeBean: return "리저브 원두"
+        case .syrub: return "시럽"
+
+        }
+    }
+            
+    var goodsCategoryEnglish: String {
+        switch self {
+
+        case .mug: return "Mug/Glass"
+        case .stainlessSteelTumbler: return "Stainless steel Tumbler"
+        case .plasticTumbler: return "Plastic Tumbler"
+        case .vacuumFlask: return "Vacuum flask"
+        case .acc: return "ACC"
+        case .brewingItem: return "Brewing Item"
+        case .wholeBean: return "Whole Bean"
+        case .via: return "VIA"
+        case .capsule: return "Starbucks at Home by capsule"
+        case .packagedTea: return "Packaged Tea"
+        case .reserveWholeBean: return "Reserve Whole Bean"
+        case .syrub: return "Syrup"
+
+        }
+    }
+    
+    /*test*//*
+    var goodCategoryTitles: [String] {
+        switch self {
+             
+        case .mug: return ["브레드", "Bread"]
+        
+        }
+    }*/
+}

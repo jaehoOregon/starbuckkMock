@@ -39,6 +39,9 @@
 		0348EEE2293DD6E40095EDD5 /* ShopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0348EEE0293DD6E40095EDD5 /* ShopTableViewCell.xib */; };
 		0348EEE5293DD9AF0095EDD5 /* DeliverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0348EEE3293DD9AF0095EDD5 /* DeliverTableViewCell.swift */; };
 		0348EEE6293DD9AF0095EDD5 /* DeliverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0348EEE4293DD9AF0095EDD5 /* DeliverTableViewCell.xib */; };
+		03CB4C172941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CB4C152941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.swift */; };
+		03CB4C182941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CB4C162941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.xib */; };
+		03CB4C1A2942D5BF00FDF6D0 /* OrderMenuByCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CB4C192942D5BF00FDF6D0 /* OrderMenuByCategoryViewController.swift */; };
 		03DE2E87293C65C000C33470 /* OtherVCTableViewCellNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE2E85293C65C000C33470 /* OtherVCTableViewCellNew.swift */; };
 		03DE2E88293C65C000C33470 /* OtherVCTableViewCellNew.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DE2E86293C65C000C33470 /* OtherVCTableViewCellNew.xib */; };
 		03DE2E8B293C65E800C33470 /* OtherVCFirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE2E89293C65E800C33470 /* OtherVCFirstTableViewCell.swift */; };
@@ -82,6 +85,9 @@
 		0348EEE0293DD6E40095EDD5 /* ShopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopTableViewCell.xib; sourceTree = "<group>"; };
 		0348EEE3293DD9AF0095EDD5 /* DeliverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliverTableViewCell.swift; sourceTree = "<group>"; };
 		0348EEE4293DD9AF0095EDD5 /* DeliverTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliverTableViewCell.xib; sourceTree = "<group>"; };
+		03CB4C152941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		03CB4C162941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderViewControllerTableViewCell.xib; sourceTree = "<group>"; };
+		03CB4C192942D5BF00FDF6D0 /* OrderMenuByCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMenuByCategoryViewController.swift; sourceTree = "<group>"; };
 		03DE2E85293C65C000C33470 /* OtherVCTableViewCellNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVCTableViewCellNew.swift; sourceTree = "<group>"; };
 		03DE2E86293C65C000C33470 /* OtherVCTableViewCellNew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherVCTableViewCellNew.xib; sourceTree = "<group>"; };
 		03DE2E89293C65E800C33470 /* OtherVCFirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVCFirstTableViewCell.swift; sourceTree = "<group>"; };
@@ -150,8 +156,9 @@
 				033E8C62293F394A009F3082 /* customSegmentedControl */,
 				0345943A2938B4C200EAD3EA /* Model */,
 				0345942B2938B4A100EAD3EA /* Main.storyboard */,
-				03F8A3B8293F1F90005ADF26 /* OrderViewController.swift */,
 				03459451293C647500EAD3EA /* OtherVC.swift */,
+				03F8A3B8293F1F90005ADF26 /* OrderViewController.swift */,
+				03CB4C142941D59900FDF6D0 /* OrderViewControllerTableViewCell */,
 				0348EED1293D85A20095EDD5 /* TableViewHeaderView.swift */,
 				0348EECF293D858C0095EDD5 /* TableViewHeaderView.xib */,
 				03DE2E89293C65E800C33470 /* OtherVCFirstTableViewCell.swift */,
@@ -202,6 +209,16 @@
 			);
 			name = "안쓰는것들";
 			path = "안쓰는것들";
+			sourceTree = "<group>";
+		};
+		03CB4C142941D59900FDF6D0 /* OrderViewControllerTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				03CB4C152941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.swift */,
+				03CB4C162941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.xib */,
+				03CB4C192942D5BF00FDF6D0 /* OrderMenuByCategoryViewController.swift */,
+			);
+			path = OrderViewControllerTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03459444293AEFC500EAD3EA /* OtherVCRecordTableViewCell.xib in Resources */,
+				03CB4C182941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.xib in Resources */,
 				0348EEE2293DD6E40095EDD5 /* ShopTableViewCell.xib in Resources */,
 				03459448293AEFEF00EAD3EA /* OtherVCTableViewCell.xib in Resources */,
 				0348EEDA293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.xib in Resources */,
@@ -294,8 +312,10 @@
 				0345942A2938B4A100EAD3EA /* ViewController.swift in Sources */,
 				0348EEE5293DD9AF0095EDD5 /* DeliverTableViewCell.swift in Sources */,
 				034594262938B4A100EAD3EA /* AppDelegate.swift in Sources */,
+				03CB4C1A2942D5BF00FDF6D0 /* OrderMenuByCategoryViewController.swift in Sources */,
 				03DE2E8B293C65E800C33470 /* OtherVCFirstTableViewCell.swift in Sources */,
 				0348EED2293D85A20095EDD5 /* TableViewHeaderView.swift in Sources */,
+				03CB4C172941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.swift in Sources */,
 				0348EEDD293DD06D0095EDD5 /* OrderTableViewCell.swift in Sources */,
 				0348EED9293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.swift in Sources */,
 				034594282938B4A100EAD3EA /* SceneDelegate.swift in Sources */,

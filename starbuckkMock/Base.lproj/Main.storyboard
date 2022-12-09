@@ -89,31 +89,37 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2iI-OX-4a7">
                                 <rect key="frame" x="0.0" y="183" width="393" height="586"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Li5-IG-oCq">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Li5-IG-oCq">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="586"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEq-f8-CnJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="67"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xtS-bo-J6n">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                                                 <subviews>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cWV-W2-uPd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="243" height="68"/>
+                                                        <rect key="frame" x="0.0" y="3" width="193" height="51"/>
                                                         <segments>
                                                             <segment title="음료"/>
                                                             <segment title="푸드"/>
                                                             <segment title="상품"/>
                                                         </segments>
+                                                        <connections>
+                                                            <action selector="orderCategorySegmentControl:" destination="sEQ-Gn-gdL" eventType="valueChanged" id="kdt-XO-3PI"/>
+                                                        </connections>
                                                     </segmentedControl>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KaF-6m-yO5">
+                                                        <rect key="frame" x="193" y="3" width="200" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="t11-oL-TT9"/>
+                                                        </constraints>
+                                                    </view>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="cWV-W2-uPd" secondAttribute="bottom" id="DOC-nk-laa"/>
-                                                    <constraint firstItem="cWV-W2-uPd" firstAttribute="top" secondItem="EEq-f8-CnJ" secondAttribute="top" id="Kab-mf-Tcs"/>
-                                                    <constraint firstAttribute="trailing" secondItem="cWV-W2-uPd" secondAttribute="trailing" constant="150" id="jwi-hk-nQm"/>
-                                                    <constraint firstItem="cWV-W2-uPd" firstAttribute="leading" secondItem="EEq-f8-CnJ" secondAttribute="leading" id="mAc-cA-rcf"/>
+                                                    <constraint firstItem="KaF-6m-yO5" firstAttribute="height" secondItem="cWV-W2-uPd" secondAttribute="height" id="1LO-sm-XVB"/>
                                                 </constraints>
-                                            </view>
+                                            </stackView>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g1C-oh-b8p">
-                                                <rect key="frame" x="0.0" y="67" width="393" height="519"/>
+                                                <rect key="frame" x="0.0" y="56" width="393" height="530"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <connections>
                                                     <outlet property="dataSource" destination="sEQ-Gn-gdL" id="OmC-6k-Uxa"/>
@@ -121,6 +127,12 @@
                                                 </connections>
                                             </tableView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="g1C-oh-b8p" firstAttribute="top" secondItem="xtS-bo-J6n" secondAttribute="bottom" id="0U9-4I-GMf"/>
+                                            <constraint firstItem="xtS-bo-J6n" firstAttribute="top" secondItem="Li5-IG-oCq" secondAttribute="top" id="IxZ-LK-Rgp"/>
+                                            <constraint firstAttribute="trailing" secondItem="xtS-bo-J6n" secondAttribute="trailing" id="LJz-OH-IMu"/>
+                                            <constraint firstItem="xtS-bo-J6n" firstAttribute="leading" secondItem="Li5-IG-oCq" secondAttribute="leading" id="yjw-U6-S8S"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -143,13 +155,28 @@
                     </view>
                     <navigationItem key="navigationItem" id="KQF-tM-eLt"/>
                     <connections>
-                        <outlet property="orderCategorySegmentControl" destination="cWV-W2-uPd" id="Ta9-nX-V3X"/>
+                        <outlet property="orderCategorySegmentControl" destination="cWV-W2-uPd" id="tfY-gS-2zV"/>
                         <outlet property="orderTableView" destination="g1C-oh-b8p" id="DW3-p0-Pjk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOH-SC-pHK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1536.6412213740457" y="953.52112676056345"/>
+            <point key="canvasLocation" x="608" y="1623"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lPo-0y-bDQ">
+            <objects>
+                <viewController id="eYv-Wv-Fnt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3B3-LN-kGH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Jmo-0s-uve"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4we-BZ-tjS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1361" y="1623"/>
         </scene>
         <!--Shop-->
         <scene sceneID="Jf1-nG-Nrn">
