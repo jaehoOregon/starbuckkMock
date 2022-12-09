@@ -89,25 +89,25 @@ enum DrinkCategory: Int, CaseIterable {
     }
     
     /*test*/
-    var drinkCategoryTitles: [String] {
-        switch self {
-
-        case .reserveEspresso: return ["리저브 에스프레소", "Reserve Espresso"]
-        case .reserveDrip: return ["리저브 드립", "Reserve Drip"]
-        case .starbucksRefreshers: return ["리프레셔", "Starbucks Refresher"]
-        case .coldBrew: return ["콜드 브루", "Cold Brew"]
-        case .blondBrew: return ["블론드", "Blonde Coffee"]
-        case .Espresso: return ["에스프레소", "Espresso"]
-        case .decafCoffee: return ["디카페인 커피", "Decaf Coffee"]
-        case .prappuccino: return ["프라푸치노", "Frappuccino"]
-        case .blendid: return ["블렌디드", "Blended"]
-        case .starbucksfizzio: return ["피지오", "Starbucks fizzio"]
-        case .teavana: return ["티바나", "Teavana"]
-        case .brewedCoffee: return ["브루드 커피", "Brewed Coffee"]
-        case .others: return ["아포가토/기타", "Others"]
-        case .rtd: return ["병음료", "RTD"]
-        }
-    }
+//    var drinkCategoryTitles: [String] {
+//        switch self {
+//
+//        case .reserveEspresso: return ["리저브 에스프레소", "Reserve Espresso"]
+//        case .reserveDrip: return ["리저브 드립", "Reserve Drip"]
+//        case .starbucksRefreshers: return ["리프레셔", "Starbucks Refresher"]
+//        case .coldBrew: return ["콜드 브루", "Cold Brew"]
+//        case .blondBrew: return ["블론드", "Blonde Coffee"]
+//        case .Espresso: return ["에스프레소", "Espresso"]
+//        case .decafCoffee: return ["디카페인 커피", "Decaf Coffee"]
+//        case .prappuccino: return ["프라푸치노", "Frappuccino"]
+//        case .blendid: return ["블렌디드", "Blended"]
+//        case .starbucksfizzio: return ["피지오", "Starbucks fizzio"]
+//        case .teavana: return ["티바나", "Teavana"]
+//        case .brewedCoffee: return ["브루드 커피", "Brewed Coffee"]
+//        case .others: return ["아포가토/기타", "Others"]
+//        case .rtd: return ["병음료", "RTD"]
+//        }
+//    }
     
 //    func toStringKor(_ index: Int) -> String {
 //        let options = ["리저브 에스프레소", "리저브 드립", "리프레셔", "콜드 브루", "블론드", "에스프레소", "디카페인 커피", "프라푸치노", "블렌디드", "피지오", "티바나", "브루드 커피", "아포가토/기타", "병음료"]

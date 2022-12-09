@@ -8,11 +8,13 @@
 import UIKit
 
 class OrderMenuByCategoryViewControllerTableViewCell: UITableViewCell {
+
     
+    @IBOutlet weak var menuImage: UIImageView!
     @IBOutlet weak var nameKor: UILabel!
     @IBOutlet weak var nameEng: UILabel!
     @IBOutlet weak var price: UILabel!
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

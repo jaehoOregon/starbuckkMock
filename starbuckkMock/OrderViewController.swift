@@ -10,13 +10,13 @@ import UIKit
 class OrderViewController: UIViewController {
 
 //    let manager = MenuManager().getDrinkMenuByCategory(from: DrinkCategory(rawValue: 0)!)
+//    let test = DrinkCategory.Espresso.drinkCategoryKorean
+//    let test = DrinkCategory(rawValue: 0)!.drinkCategoryKorean
     
     let drinkCategory: [Int] = DrinkCategory.allCases.map{ $0.rawValue }
     let foodCategory: [Int] = FoodCategory.allCases.map{ $0.rawValue }
     let goodsCategory: [Int] = GoodsCategory.allCases.map{ $0.rawValue }
-    
-    let test = DrinkCategory(rawValue: 0)?.drinkCategoryEnglish
-    
+        
     var p: Int!
     
     var orderTableViewDataSourceArray: [String] = []
@@ -34,7 +34,7 @@ class OrderViewController: UIViewController {
         
         orderTableView.register(UINib(nibName: "OrderViewControllerTableViewCell", bundle: nil), forCellReuseIdentifier: "OrderViewControllerTableViewCell")
         
-//        print(manager.count)
+//        print(test)
 
     }
     
@@ -56,9 +56,11 @@ extension OrderViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let data = MenuManager().getDrinkMenuByCategory(from: DrinkCategory(rawValue: indexPath.row)!)
+        let menuListData = MenuManager().getDrinkMenuByCategory(from: DrinkCategory(rawValue: indexPath.row)!)
+        let menuListTitle = DrinkCategory(rawValue: indexPath.row)!.drinkCategoryKorean
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "OrderMenuByCategoryViewController") as? OrderMenuByCategoryViewController else { return }
-        vc.menuList = data
+        vc.orderMenuTableViewTitle = menuListTitle
+        vc.menuList = menuListData
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

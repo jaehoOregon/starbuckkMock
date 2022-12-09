@@ -93,10 +93,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="586"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xtS-bo-J6n">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="190"/>
                                                 <subviews>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cWV-W2-uPd">
-                                                        <rect key="frame" x="0.0" y="3" width="193" height="51"/>
+                                                        <rect key="frame" x="0.0" y="70" width="193" height="51"/>
                                                         <segments>
                                                             <segment title="음료"/>
                                                             <segment title="푸드"/>
@@ -107,7 +107,7 @@
                                                         </connections>
                                                     </segmentedControl>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KaF-6m-yO5">
-                                                        <rect key="frame" x="193" y="3" width="200" height="50"/>
+                                                        <rect key="frame" x="193" y="70" width="200" height="50"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="200" id="t11-oL-TT9"/>
@@ -119,7 +119,7 @@
                                                 </constraints>
                                             </stackView>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g1C-oh-b8p">
-                                                <rect key="frame" x="0.0" y="56" width="393" height="530"/>
+                                                <rect key="frame" x="0.0" y="190" width="393" height="396"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <connections>
                                                     <outlet property="dataSource" destination="sEQ-Gn-gdL" id="OmC-6k-Uxa"/>
@@ -196,6 +196,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4we-BZ-tjS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1361" y="1623"/>
+        </scene>
+        <!--Order Menu By Category View Controller-->
+        <scene sceneID="Dmt-Kx-c9Y">
+            <objects>
+                <viewController storyboardIdentifier="OrderMenuByCategoryViewController" id="TZy-Gd-Bcq" customClass="OrderMenuByCategoryViewController" customModule="starbuckkMock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="egD-tq-cVG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WaJ-ka-Zyn">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="elA-s0-hdo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="elA-s0-hdo" firstAttribute="bottom" secondItem="WaJ-ka-Zyn" secondAttribute="bottom" id="3dg-HW-3n3"/>
+                            <constraint firstItem="WaJ-ka-Zyn" firstAttribute="leading" secondItem="elA-s0-hdo" secondAttribute="leading" id="CMy-UD-RzP"/>
+                            <constraint firstItem="WaJ-ka-Zyn" firstAttribute="top" secondItem="elA-s0-hdo" secondAttribute="top" id="KFC-Lc-f0c"/>
+                            <constraint firstItem="elA-s0-hdo" firstAttribute="trailing" secondItem="WaJ-ka-Zyn" secondAttribute="trailing" id="wFN-iF-iaU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YN5-49-Ckg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2102" y="1623"/>
         </scene>
         <!--Shop-->
         <scene sceneID="Jf1-nG-Nrn">

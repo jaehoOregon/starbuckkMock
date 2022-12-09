@@ -11,6 +11,7 @@ class OrderMenuByCategoryViewController: UIViewController {
     
     @IBOutlet weak var orderMenuTableView: UITableView!
     
+    var orderMenuTableViewTitle: String = ""
     var menuList: [Drink] = []
     
     override func viewDidLoad() {
@@ -19,9 +20,19 @@ class OrderMenuByCategoryViewController: UIViewController {
         orderMenuTableView.delegate = self
         orderMenuTableView.dataSource = self
         
+        setUpNavigationBackBar()
+                
+        orderMenuTableView.register(UINib(nibName: "TableViewHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "TableViewHeaderView")
+
         orderMenuTableView.register(UINib(nibName: "OrderMenuByCategoryViewControllerTableViewCell", bundle: nil), forCellReuseIdentifier: "OrderMenuByCategoryViewControllerTableViewCell")
         
 //        print(menuList[0])
+    }
+    
+    func setUpNavigationBackBar() {
+        let backButton = UIBarButtonItem()
+        backButton.title = ""
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
     }
 }
 
@@ -30,15 +41,31 @@ extension OrderMenuByCategoryViewController: UITableViewDelegate {
 }
 
 extension OrderMenuByCategoryViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 60
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "TableViewHeaderView") as! TableViewHeaderView
+        headerView.tableViewHeaderTitle.text = orderMenuTableViewTitle
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 180
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = UITableViewCell()
         let cell = tableView.dequeueReusableCell(withIdentifier: "OrderMenuByCategoryViewControllerTableViewCell", for: indexPath) as! OrderMenuByCategoryViewControllerTableViewCell
-        
         cell.nameKor.text = menuList[indexPath.row].nameKor
+        cell.nameEng.text = menuList[indexPath.row].nameEng
+        cell.price.text = String(menuList[indexPath.row].price)
         return cell
     }
 }
