@@ -57,12 +57,15 @@ extension OrderViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let data = MenuManager().getDrinkMenuByCategory(from: DrinkCategory(rawValue: indexPath.row)!)
-        print(data)
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "OrderMenuByCategoryViewController") as? OrderMenuByCategoryViewController else { return }
+        vc.menuList = data
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
 // MARK: UITableViewDataSource
 extension OrderViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         let selectedIndex = p

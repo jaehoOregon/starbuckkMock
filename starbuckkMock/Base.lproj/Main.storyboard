@@ -163,16 +163,35 @@
             </objects>
             <point key="canvasLocation" x="608" y="1623"/>
         </scene>
-        <!--View Controller-->
+        <!--Order Menu By Category View Controller-->
         <scene sceneID="lPo-0y-bDQ">
             <objects>
-                <viewController id="eYv-Wv-Fnt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OrderMenuByCategoryViewController" id="eYv-Wv-Fnt" customClass="OrderMenuByCategoryViewController" customModule="starbuckkMock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3B3-LN-kGH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sHD-7r-iPE">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="eYv-Wv-Fnt" id="SJM-lj-o6r"/>
+                                    <outlet property="delegate" destination="eYv-Wv-Fnt" id="f13-CX-YbW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Jmo-0s-uve"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sHD-7r-iPE" firstAttribute="top" secondItem="Jmo-0s-uve" secondAttribute="top" id="5DX-BM-khe"/>
+                            <constraint firstItem="Jmo-0s-uve" firstAttribute="bottom" secondItem="sHD-7r-iPE" secondAttribute="bottom" id="Ayh-nj-x06"/>
+                            <constraint firstItem="sHD-7r-iPE" firstAttribute="leading" secondItem="Jmo-0s-uve" secondAttribute="leading" id="dWd-BY-c05"/>
+                            <constraint firstItem="Jmo-0s-uve" firstAttribute="trailing" secondItem="sHD-7r-iPE" secondAttribute="trailing" id="pLV-Lv-f84"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="orderMenuTableView" destination="sHD-7r-iPE" id="MFN-Ng-Si5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4we-BZ-tjS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

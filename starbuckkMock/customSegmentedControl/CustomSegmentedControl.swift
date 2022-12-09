@@ -21,9 +21,9 @@ class CustomSegmentedControl: UISegmentedControl {
     }
     
     required init?(coder: NSCoder) {
-        fatalError()
+        fatalError("init(coder:) has not been implemented")
     }
-    
+        
     func removeBackGroundAndDivider() {
         let image = UIImage()
         self.setBackgroundImage(image, for: .normal, barMetrics: .default)
@@ -31,5 +31,10 @@ class CustomSegmentedControl: UISegmentedControl {
         self.setBackgroundImage(image, for: .highlighted, barMetrics: .default)
         
         self.setDividerImage(image, forLeftSegmentState: .selected, rightSegmentState: .normal, barMetrics: .default)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
     }
 }
