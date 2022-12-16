@@ -37,7 +37,12 @@ class OrderMenuByCategoryViewController: UIViewController {
 }
 
 extension OrderMenuByCategoryViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "orderMenuDetailViewController") as? orderMenuDetailViewController else { return }
+//        vc.orderMenuTableViewTitle = menuListTitle
+//        vc.menuList = menuListData
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension OrderMenuByCategoryViewController: UITableViewDataSource {

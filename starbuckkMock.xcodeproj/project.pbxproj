@@ -42,6 +42,10 @@
 		039FF8A029431B4000146EC9 /* OrderMenuByCategoryViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039FF89E29431B4000146EC9 /* OrderMenuByCategoryViewControllerTableViewCell.swift */; };
 		039FF8A129431B4000146EC9 /* OrderMenuByCategoryViewControllerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039FF89F29431B4000146EC9 /* OrderMenuByCategoryViewControllerTableViewCell.xib */; };
 		039FF8A3294340C400146EC9 /* orderMenuDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039FF8A2294340C400146EC9 /* orderMenuDetailViewController.swift */; };
+		039FF8AA294345D900146EC9 /* menuDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039FF8A8294345D900146EC9 /* menuDetailTableViewCell.swift */; };
+		039FF8AB294345D900146EC9 /* menuDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039FF8A9294345D900146EC9 /* menuDetailTableViewCell.xib */; };
+		039FF8AF294A642900146EC9 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039FF8AE294A642900146EC9 /* Cell.swift */; };
+		039FF8B1294A66ED00146EC9 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039FF8B0294A66ED00146EC9 /* TestCell.swift */; };
 		03CB4C172941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CB4C152941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.swift */; };
 		03CB4C182941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CB4C162941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.xib */; };
 		03CB4C1A2942D5BF00FDF6D0 /* OrderMenuByCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CB4C192942D5BF00FDF6D0 /* OrderMenuByCategoryViewController.swift */; };
@@ -91,6 +95,10 @@
 		039FF89E29431B4000146EC9 /* OrderMenuByCategoryViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMenuByCategoryViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		039FF89F29431B4000146EC9 /* OrderMenuByCategoryViewControllerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderMenuByCategoryViewControllerTableViewCell.xib; sourceTree = "<group>"; };
 		039FF8A2294340C400146EC9 /* orderMenuDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderMenuDetailViewController.swift; sourceTree = "<group>"; };
+		039FF8A8294345D900146EC9 /* menuDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuDetailTableViewCell.swift; sourceTree = "<group>"; };
+		039FF8A9294345D900146EC9 /* menuDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = menuDetailTableViewCell.xib; sourceTree = "<group>"; };
+		039FF8AE294A642900146EC9 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		039FF8B0294A66ED00146EC9 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
 		03CB4C152941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		03CB4C162941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderViewControllerTableViewCell.xib; sourceTree = "<group>"; };
 		03CB4C192942D5BF00FDF6D0 /* OrderMenuByCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMenuByCategoryViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +149,7 @@
 		034594192938B4A100EAD3EA = {
 			isa = PBXGroup;
 			children = (
+				039FF8B0294A66ED00146EC9 /* TestCell.swift */,
 				034594242938B4A100EAD3EA /* starbuckkMock */,
 				034594232938B4A100EAD3EA /* Products */,
 			);
@@ -162,8 +171,11 @@
 				033E8C62293F394A009F3082 /* customSegmentedControl */,
 				0345943A2938B4C200EAD3EA /* Model */,
 				0345942B2938B4A100EAD3EA /* Main.storyboard */,
+				039FF8AE294A642900146EC9 /* Cell.swift */,
 				03459451293C647500EAD3EA /* OtherVC.swift */,
 				039FF8A2294340C400146EC9 /* orderMenuDetailViewController.swift */,
+				039FF8A8294345D900146EC9 /* menuDetailTableViewCell.swift */,
+				039FF8A9294345D900146EC9 /* menuDetailTableViewCell.xib */,
 				03CB4C192942D5BF00FDF6D0 /* OrderMenuByCategoryViewController.swift */,
 				039FF89E29431B4000146EC9 /* OrderMenuByCategoryViewControllerTableViewCell.swift */,
 				039FF89F29431B4000146EC9 /* OrderMenuByCategoryViewControllerTableViewCell.xib */,
@@ -299,6 +311,7 @@
 				034594322938B4A100EAD3EA /* LaunchScreen.storyboard in Resources */,
 				03DE2E8C293C65E800C33470 /* OtherVCFirstTableViewCell.xib in Resources */,
 				0348EEE6293DD9AF0095EDD5 /* DeliverTableViewCell.xib in Resources */,
+				039FF8AB294345D900146EC9 /* menuDetailTableViewCell.xib in Resources */,
 				0345942F2938B4A100EAD3EA /* Assets.xcassets in Resources */,
 				0348EED6293DB4280095EDD5 /* cupInHand.png in Resources */,
 				0345944C293B4ADC00EAD3EA /* OtherVCCollectionViewCell.xib in Resources */,
@@ -322,6 +335,7 @@
 				0345942A2938B4A100EAD3EA /* ViewController.swift in Sources */,
 				0348EEE5293DD9AF0095EDD5 /* DeliverTableViewCell.swift in Sources */,
 				034594262938B4A100EAD3EA /* AppDelegate.swift in Sources */,
+				039FF8AF294A642900146EC9 /* Cell.swift in Sources */,
 				03CB4C1A2942D5BF00FDF6D0 /* OrderMenuByCategoryViewController.swift in Sources */,
 				03DE2E8B293C65E800C33470 /* OtherVCFirstTableViewCell.swift in Sources */,
 				0348EED2293D85A20095EDD5 /* TableViewHeaderView.swift in Sources */,
@@ -330,12 +344,14 @@
 				0348EED9293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.swift in Sources */,
 				039FF8A029431B4000146EC9 /* OrderMenuByCategoryViewControllerTableViewCell.swift in Sources */,
 				034594282938B4A100EAD3EA /* SceneDelegate.swift in Sources */,
+				039FF8AA294345D900146EC9 /* menuDetailTableViewCell.swift in Sources */,
 				03459443293AEFC500EAD3EA /* OtherVCRecordTableViewCell.swift in Sources */,
 				03F8A3B9293F1F90005ADF26 /* OrderViewController.swift in Sources */,
 				03346E8E293E333400F00CEB /* TableViewFooterView.swift in Sources */,
 				03289DB4293E2C3B00BEFA41 /* CustomerServiceTableViewCell.swift in Sources */,
 				033E8C64293F397C009F3082 /* CustomSegmentedControl.swift in Sources */,
 				039FF8A3294340C400146EC9 /* orderMenuDetailViewController.swift in Sources */,
+				039FF8B1294A66ED00146EC9 /* TestCell.swift in Sources */,
 				0345943C2938B4CF00EAD3EA /* Data.swift in Sources */,
 				03459452293C647500EAD3EA /* OtherVC.swift in Sources */,
 				03DE2E87293C65C000C33470 /* OtherVCTableViewCellNew.swift in Sources */,
