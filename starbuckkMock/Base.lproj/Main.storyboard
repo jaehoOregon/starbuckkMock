@@ -310,6 +310,29 @@
                                             </view>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YF7-1K-icx">
+                                        <rect key="frame" x="4" y="782" width="393" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSc-QG-aeo">
+                                                <rect key="frame" x="30" y="20" width="333" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="주문하기"/>
+                                                <connections>
+                                                    <action selector="placeOrderButton:" destination="TZy-Gd-Bcq" eventType="touchUpInside" id="p4x-ZF-dAy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="cSc-QG-aeo" secondAttribute="trailing" constant="30" id="IvP-xp-77k"/>
+                                            <constraint firstAttribute="bottom" secondItem="cSc-QG-aeo" secondAttribute="bottom" constant="20" id="KlJ-B4-kNC"/>
+                                            <constraint firstAttribute="height" constant="80" id="Ksi-gW-n2Q"/>
+                                            <constraint firstItem="cSc-QG-aeo" firstAttribute="leading" secondItem="YF7-1K-icx" secondAttribute="leading" constant="30" id="LEB-Oi-500"/>
+                                            <constraint firstItem="cSc-QG-aeo" firstAttribute="top" secondItem="YF7-1K-icx" secondAttribute="top" constant="20" id="ycs-ZV-4g7"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="e6K-xb-VzV" firstAttribute="bottom" secondItem="PW3-wN-oAq" secondAttribute="bottom" id="XsF-EQ-hHb"/>
@@ -324,6 +347,9 @@
                         <viewLayoutGuide key="safeArea" id="elA-s0-hdo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="elA-s0-hdo" firstAttribute="bottom" secondItem="YF7-1K-icx" secondAttribute="bottom" id="2Ey-6l-736"/>
+                            <constraint firstItem="elA-s0-hdo" firstAttribute="leading" secondItem="YF7-1K-icx" secondAttribute="leading" id="NMz-mT-6wx"/>
+                            <constraint firstItem="elA-s0-hdo" firstAttribute="trailing" secondItem="YF7-1K-icx" secondAttribute="trailing" id="Vy7-7r-BSi"/>
                             <constraint firstItem="e6K-xb-VzV" firstAttribute="width" secondItem="egD-tq-cVG" secondAttribute="width" id="Wg4-d2-HWX"/>
                         </constraints>
                     </view>
@@ -333,6 +359,7 @@
                         <outlet property="menuNameEng" destination="Sic-00-G64" id="z8v-oz-xRw"/>
                         <outlet property="menuNameKor" destination="Pir-nm-UZP" id="rnz-Le-mfP"/>
                         <outlet property="menuPrice" destination="MbR-mq-aiw" id="KXb-DE-qnP"/>
+                        <outlet property="placeOrderButton" destination="cSc-QG-aeo" id="XJS-dW-ged"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YN5-49-Ckg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -456,6 +483,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

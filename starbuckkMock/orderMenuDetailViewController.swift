@@ -12,7 +12,7 @@ import UIKit
 
 class orderMenuDetailViewController: UIViewController {
     
-    private var floatingButton: UIButton?
+    let screenRect = UIScreen.main.bounds
     
     var menuInfo: Drink? = nil
     
@@ -22,16 +22,18 @@ class orderMenuDetailViewController: UIViewController {
     @IBOutlet weak var menuFlavornote: UILabel!
     @IBOutlet weak var menuPrice: UILabel!
     
+    @IBOutlet weak var placeOrderButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        let screenWidth = screenRect.size.width
                 
-        menuNameKor.text = menuInfo?.nameKor
-        menuNameEng.text = menuInfo?.nameEng
-        menuFlavornote.text = menuInfo?.flavorNote
-        menuPrice.text = "\(menuInfo!.price)원"
-                
-//        print("orderMenuDetailViewController\(menuInfo)")
-
     }
     
+    @IBAction func placeOrderButton(_ sender: UIButton) {
+        
+    }
 }
+
+

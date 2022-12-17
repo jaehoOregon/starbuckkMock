@@ -46,6 +46,17 @@
 		039FF8AB294345D900146EC9 /* menuDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039FF8A9294345D900146EC9 /* menuDetailTableViewCell.xib */; };
 		039FF8AF294A642900146EC9 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039FF8AE294A642900146EC9 /* Cell.swift */; };
 		039FF8B1294A66ED00146EC9 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039FF8B0294A66ED00146EC9 /* TestCell.swift */; };
+		03BFB046294D647500DE7A56 /* OrderButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03BFB045294D647500DE7A56 /* OrderButtonView.xib */; };
+		03BFB048294D64A700DE7A56 /* OrderButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BFB047294D64A700DE7A56 /* OrderButtonView.swift */; };
+		03BFB04B294DBF9E00DE7A56 /* CaffeMochaIced.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 03BFB049294DBF9D00DE7A56 /* CaffeMochaIced.PNG */; };
+		03BFB04C294DBF9E00DE7A56 /* CaffeMocha.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 03BFB04A294DBF9D00DE7A56 /* CaffeMocha.PNG */; };
+		03BFB04F294DBFB600DE7A56 /* ToffeeNutLatterIced.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 03BFB04D294DBFB600DE7A56 /* ToffeeNutLatterIced.PNG */; };
+		03BFB050294DBFB600DE7A56 /* ToffeeNutLatter.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 03BFB04E294DBFB600DE7A56 /* ToffeeNutLatter.PNG */; };
+		03BFB052294DBFC800DE7A56 /* ReserveNitro.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 03BFB051294DBFC800DE7A56 /* ReserveNitro.PNG */; };
+		03BFB054294DBFD300DE7A56 /* MintColdBrew.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 03BFB053294DBFD300DE7A56 /* MintColdBrew.PNG */; };
+		03BFB056294DBFDE00DE7A56 /* ClassicMintMocha.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 03BFB055294DBFDE00DE7A56 /* ClassicMintMocha.PNG */; };
+		03BFB058294DBFE500DE7A56 /* RwandaSClassicMintMocha.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 03BFB057294DBFE500DE7A56 /* RwandaSClassicMintMocha.PNG */; };
+		03BFB05A294DC04600DE7A56 /* ChristmasClassicMintMocha.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 03BFB059294DC04600DE7A56 /* ChristmasClassicMintMocha.PNG */; };
 		03CB4C172941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CB4C152941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.swift */; };
 		03CB4C182941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03CB4C162941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.xib */; };
 		03CB4C1A2942D5BF00FDF6D0 /* OrderMenuByCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CB4C192942D5BF00FDF6D0 /* OrderMenuByCategoryViewController.swift */; };
@@ -99,6 +110,17 @@
 		039FF8A9294345D900146EC9 /* menuDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = menuDetailTableViewCell.xib; sourceTree = "<group>"; };
 		039FF8AE294A642900146EC9 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		039FF8B0294A66ED00146EC9 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		03BFB045294D647500DE7A56 /* OrderButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderButtonView.xib; sourceTree = "<group>"; };
+		03BFB047294D64A700DE7A56 /* OrderButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderButtonView.swift; sourceTree = "<group>"; };
+		03BFB049294DBF9D00DE7A56 /* CaffeMochaIced.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CaffeMochaIced.PNG; sourceTree = "<group>"; };
+		03BFB04A294DBF9D00DE7A56 /* CaffeMocha.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CaffeMocha.PNG; sourceTree = "<group>"; };
+		03BFB04D294DBFB600DE7A56 /* ToffeeNutLatterIced.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToffeeNutLatterIced.PNG; sourceTree = "<group>"; };
+		03BFB04E294DBFB600DE7A56 /* ToffeeNutLatter.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToffeeNutLatter.PNG; sourceTree = "<group>"; };
+		03BFB051294DBFC800DE7A56 /* ReserveNitro.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReserveNitro.PNG; sourceTree = "<group>"; };
+		03BFB053294DBFD300DE7A56 /* MintColdBrew.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MintColdBrew.PNG; sourceTree = "<group>"; };
+		03BFB055294DBFDE00DE7A56 /* ClassicMintMocha.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClassicMintMocha.PNG; sourceTree = "<group>"; };
+		03BFB057294DBFE500DE7A56 /* RwandaSClassicMintMocha.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RwandaSClassicMintMocha.PNG; sourceTree = "<group>"; };
+		03BFB059294DC04600DE7A56 /* ChristmasClassicMintMocha.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChristmasClassicMintMocha.PNG; sourceTree = "<group>"; };
 		03CB4C152941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		03CB4C162941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderViewControllerTableViewCell.xib; sourceTree = "<group>"; };
 		03CB4C192942D5BF00FDF6D0 /* OrderMenuByCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMenuByCategoryViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +195,8 @@
 				0345942B2938B4A100EAD3EA /* Main.storyboard */,
 				039FF8AE294A642900146EC9 /* Cell.swift */,
 				03459451293C647500EAD3EA /* OtherVC.swift */,
+				03BFB045294D647500DE7A56 /* OrderButtonView.xib */,
+				03BFB047294D64A700DE7A56 /* OrderButtonView.swift */,
 				039FF8A2294340C400146EC9 /* orderMenuDetailViewController.swift */,
 				039FF8A8294345D900146EC9 /* menuDetailTableViewCell.swift */,
 				039FF8A9294345D900146EC9 /* menuDetailTableViewCell.xib */,
@@ -190,6 +214,15 @@
 				03346E8B293E330700F00CEB /* TableViewFooterView.xib */,
 				03459459293C657500EAD3EA /* 안쓰는것들 */,
 				0345942E2938B4A100EAD3EA /* Assets.xcassets */,
+				03BFB055294DBFDE00DE7A56 /* ClassicMintMocha.PNG */,
+				03BFB04A294DBF9D00DE7A56 /* CaffeMocha.PNG */,
+				03BFB057294DBFE500DE7A56 /* RwandaSClassicMintMocha.PNG */,
+				03BFB059294DC04600DE7A56 /* ChristmasClassicMintMocha.PNG */,
+				03BFB049294DBF9D00DE7A56 /* CaffeMochaIced.PNG */,
+				03BFB051294DBFC800DE7A56 /* ReserveNitro.PNG */,
+				03BFB053294DBFD300DE7A56 /* MintColdBrew.PNG */,
+				03BFB04E294DBFB600DE7A56 /* ToffeeNutLatter.PNG */,
+				03BFB04D294DBFB600DE7A56 /* ToffeeNutLatterIced.PNG */,
 				0348EED5293DB4280095EDD5 /* cupInHand.png */,
 				03DE2E8D293C6DE200C33470 /* backgroundCupImage.jpeg */,
 				034594302938B4A100EAD3EA /* LaunchScreen.storyboard */,
@@ -301,24 +334,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				03459444293AEFC500EAD3EA /* OtherVCRecordTableViewCell.xib in Resources */,
+				03BFB04C294DBF9E00DE7A56 /* CaffeMocha.PNG in Resources */,
+				03BFB04B294DBF9E00DE7A56 /* CaffeMochaIced.PNG in Resources */,
 				039FF8A129431B4000146EC9 /* OrderMenuByCategoryViewControllerTableViewCell.xib in Resources */,
 				03CB4C182941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.xib in Resources */,
 				0348EEE2293DD6E40095EDD5 /* ShopTableViewCell.xib in Resources */,
 				03459448293AEFEF00EAD3EA /* OtherVCTableViewCell.xib in Resources */,
+				03BFB052294DBFC800DE7A56 /* ReserveNitro.PNG in Resources */,
 				0348EEDA293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.xib in Resources */,
 				03DE2E88293C65C000C33470 /* OtherVCTableViewCellNew.xib in Resources */,
+				03BFB05A294DC04600DE7A56 /* ChristmasClassicMintMocha.PNG in Resources */,
 				03346E8C293E330700F00CEB /* TableViewFooterView.xib in Resources */,
 				034594322938B4A100EAD3EA /* LaunchScreen.storyboard in Resources */,
+				03BFB04F294DBFB600DE7A56 /* ToffeeNutLatterIced.PNG in Resources */,
 				03DE2E8C293C65E800C33470 /* OtherVCFirstTableViewCell.xib in Resources */,
 				0348EEE6293DD9AF0095EDD5 /* DeliverTableViewCell.xib in Resources */,
 				039FF8AB294345D900146EC9 /* menuDetailTableViewCell.xib in Resources */,
+				03BFB046294D647500DE7A56 /* OrderButtonView.xib in Resources */,
 				0345942F2938B4A100EAD3EA /* Assets.xcassets in Resources */,
 				0348EED6293DB4280095EDD5 /* cupInHand.png in Resources */,
 				0345944C293B4ADC00EAD3EA /* OtherVCCollectionViewCell.xib in Resources */,
+				03BFB054294DBFD300DE7A56 /* MintColdBrew.PNG in Resources */,
+				03BFB056294DBFDE00DE7A56 /* ClassicMintMocha.PNG in Resources */,
 				03DE2E8E293C6DE200C33470 /* backgroundCupImage.jpeg in Resources */,
 				0345942D2938B4A100EAD3EA /* Main.storyboard in Resources */,
 				0348EED0293D858C0095EDD5 /* TableViewHeaderView.xib in Resources */,
+				03BFB050294DBFB600DE7A56 /* ToffeeNutLatter.PNG in Resources */,
 				03289DB5293E2C3B00BEFA41 /* CustomerServiceTableViewCell.xib in Resources */,
+				03BFB058294DBFE500DE7A56 /* RwandaSClassicMintMocha.PNG in Resources */,
 				0348EEDE293DD06D0095EDD5 /* OrderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +384,7 @@
 				0348EED2293D85A20095EDD5 /* TableViewHeaderView.swift in Sources */,
 				03CB4C172941D5BD00FDF6D0 /* OrderViewControllerTableViewCell.swift in Sources */,
 				0348EEDD293DD06D0095EDD5 /* OrderTableViewCell.swift in Sources */,
+				03BFB048294D64A700DE7A56 /* OrderButtonView.swift in Sources */,
 				0348EED9293DC1090095EDD5 /* OtherViewControllerTableViewPayCell.swift in Sources */,
 				039FF8A029431B4000146EC9 /* OrderMenuByCategoryViewControllerTableViewCell.swift in Sources */,
 				034594282938B4A100EAD3EA /* SceneDelegate.swift in Sources */,
