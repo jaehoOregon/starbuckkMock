@@ -70,7 +70,6 @@
 		03DE2E88293C65C000C33470 /* OtherVCTableViewCellNew.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DE2E86293C65C000C33470 /* OtherVCTableViewCellNew.xib */; };
 		03DE2E8B293C65E800C33470 /* OtherVCFirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DE2E89293C65E800C33470 /* OtherVCFirstTableViewCell.swift */; };
 		03DE2E8C293C65E800C33470 /* OtherVCFirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DE2E8A293C65E800C33470 /* OtherVCFirstTableViewCell.xib */; };
-		03DE2E8E293C6DE200C33470 /* backgroundCupImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 03DE2E8D293C6DE200C33470 /* backgroundCupImage.jpeg */; };
 		03F8A3B9293F1F90005ADF26 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8A3B8293F1F90005ADF26 /* OrderViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -140,7 +139,6 @@
 		03DE2E86293C65C000C33470 /* OtherVCTableViewCellNew.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherVCTableViewCellNew.xib; sourceTree = "<group>"; };
 		03DE2E89293C65E800C33470 /* OtherVCFirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVCFirstTableViewCell.swift; sourceTree = "<group>"; };
 		03DE2E8A293C65E800C33470 /* OtherVCFirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherVCFirstTableViewCell.xib; sourceTree = "<group>"; };
-		03DE2E8D293C6DE200C33470 /* backgroundCupImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundCupImage.jpeg; sourceTree = "<group>"; };
 		03F8A3B8293F1F90005ADF26 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -206,35 +204,23 @@
 				0345943A2938B4C200EAD3EA /* Model */,
 				0345942B2938B4A100EAD3EA /* Main.storyboard */,
 				039FF8AE294A642900146EC9 /* Cell.swift */,
-				03459451293C647500EAD3EA /* OtherVC.swift */,
-				03BFB078294ECE7F00DE7A56 /* CartTableViewCell.swift */,
-				03BFB079294ECE7F00DE7A56 /* CartTableViewCell.xib */,
-				03BFB070294EB55300DE7A56 /* PaymentViewController.swift */,
+				03AC33CF294EDDDE00E8C2B0 /* OtherViewControllers */,
+				03AC33CE294EDDCC00E8C2B0 /* OrderViewControllers */,
+				03AC33CD294EDAF500E8C2B0 /* TableViewCells */,
 				03BFB072294EB65E00DE7A56 /* popUpView.xib */,
 				03BFB076294EB8C400DE7A56 /* popUpView.swift */,
-				03BFB06E294E9D2400DE7A56 /* PlaceOrderViewController.swift */,
 				03BFB045294D647500DE7A56 /* OrderButtonView.xib */,
 				03BFB047294D64A700DE7A56 /* OrderButtonView.swift */,
-				039FF8A2294340C400146EC9 /* orderMenuDetailViewController.swift */,
-				039FF8A8294345D900146EC9 /* menuDetailTableViewCell.swift */,
-				039FF8A9294345D900146EC9 /* menuDetailTableViewCell.xib */,
-				03CB4C192942D5BF00FDF6D0 /* OrderMenuByCategoryViewController.swift */,
-				039FF89E29431B4000146EC9 /* OrderMenuByCategoryViewControllerTableViewCell.swift */,
-				039FF89F29431B4000146EC9 /* OrderMenuByCategoryViewControllerTableViewCell.xib */,
-				03F8A3B8293F1F90005ADF26 /* OrderViewController.swift */,
-				03CB4C142941D59900FDF6D0 /* OrderViewControllerTableViewCell */,
 				0348EED1293D85A20095EDD5 /* TableViewHeaderView.swift */,
 				0348EECF293D858C0095EDD5 /* TableViewHeaderView.xib */,
 				03DE2E89293C65E800C33470 /* OtherVCFirstTableViewCell.swift */,
 				03DE2E8A293C65E800C33470 /* OtherVCFirstTableViewCell.xib */,
-				033E8C65294114EE009F3082 /* OtherViewControllerTableViewCells */,
 				03346E8D293E333400F00CEB /* TableViewFooterView.swift */,
 				03346E8B293E330700F00CEB /* TableViewFooterView.xib */,
-				03459459293C657500EAD3EA /* 안쓰는것들 */,
 				0345942E2938B4A100EAD3EA /* Assets.xcassets */,
 				03BFB06D294DD58C00DE7A56 /* DrinkImages */,
+				03459459293C657500EAD3EA /* 안쓰는것들 */,
 				0348EED5293DB4280095EDD5 /* cupInHand.png */,
-				03DE2E8D293C6DE200C33470 /* backgroundCupImage.jpeg */,
 				034594302938B4A100EAD3EA /* LaunchScreen.storyboard */,
 				034594332938B4A100EAD3EA /* Info.plist */,
 			);
@@ -274,6 +260,57 @@
 			);
 			name = "안쓰는것들";
 			path = "안쓰는것들";
+			sourceTree = "<group>";
+		};
+		03AC33CB294EDAD400E8C2B0 /* CartTableViewCel */ = {
+			isa = PBXGroup;
+			children = (
+				03BFB078294ECE7F00DE7A56 /* CartTableViewCell.swift */,
+				03BFB079294ECE7F00DE7A56 /* CartTableViewCell.xib */,
+			);
+			path = CartTableViewCel;
+			sourceTree = "<group>";
+		};
+		03AC33CC294EDAE200E8C2B0 /* OrderMenuByCategoryTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				039FF89E29431B4000146EC9 /* OrderMenuByCategoryViewControllerTableViewCell.swift */,
+				039FF89F29431B4000146EC9 /* OrderMenuByCategoryViewControllerTableViewCell.xib */,
+			);
+			path = OrderMenuByCategoryTableViewCell;
+			sourceTree = "<group>";
+		};
+		03AC33CD294EDAF500E8C2B0 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				039FF8A8294345D900146EC9 /* menuDetailTableViewCell.swift */,
+				039FF8A9294345D900146EC9 /* menuDetailTableViewCell.xib */,
+				033E8C65294114EE009F3082 /* OtherViewControllerTableViewCells */,
+				03CB4C142941D59900FDF6D0 /* OrderViewControllerTableViewCell */,
+				03AC33CC294EDAE200E8C2B0 /* OrderMenuByCategoryTableViewCell */,
+				03AC33CB294EDAD400E8C2B0 /* CartTableViewCel */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		03AC33CE294EDDCC00E8C2B0 /* OrderViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				03F8A3B8293F1F90005ADF26 /* OrderViewController.swift */,
+				03CB4C192942D5BF00FDF6D0 /* OrderMenuByCategoryViewController.swift */,
+				039FF8A2294340C400146EC9 /* orderMenuDetailViewController.swift */,
+				03BFB06E294E9D2400DE7A56 /* PlaceOrderViewController.swift */,
+				03BFB070294EB55300DE7A56 /* PaymentViewController.swift */,
+			);
+			path = OrderViewControllers;
+			sourceTree = "<group>";
+		};
+		03AC33CF294EDDDE00E8C2B0 /* OtherViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				03459451293C647500EAD3EA /* OtherVC.swift */,
+			);
+			path = OtherViewControllers;
 			sourceTree = "<group>";
 		};
 		03BFB06D294DD58C00DE7A56 /* DrinkImages */ = {
@@ -384,7 +421,6 @@
 				03BFB06A294DD56800DE7A56 /* CaffeMochaIced.png in Resources */,
 				0348EED6293DB4280095EDD5 /* cupInHand.png in Resources */,
 				0345944C293B4ADC00EAD3EA /* OtherVCCollectionViewCell.xib in Resources */,
-				03DE2E8E293C6DE200C33470 /* backgroundCupImage.jpeg in Resources */,
 				0345942D2938B4A100EAD3EA /* Main.storyboard in Resources */,
 				0348EED0293D858C0095EDD5 /* TableViewHeaderView.xib in Resources */,
 				03BFB066294DD56800DE7A56 /* MintColdBrew.png in Resources */,

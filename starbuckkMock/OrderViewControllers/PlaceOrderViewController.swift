@@ -28,7 +28,8 @@ class PlaceOrderViewController: UIViewController {
     
     @IBAction func placeOrder(_ sender: UIButton) {
         let selectedMenu: Drink = menuInfoForOrder!
-        var orderList = OrderManager().addSelectedDrink(menu: selectedMenu)
+        let orderList = OrderManager().addSelectedDrink(menu: selectedMenu)
+//        var orderList = OrderManager().addSelectedDrink(menu: selectedMenu)
         print("orderList\(orderList)")
     }
     
@@ -37,20 +38,28 @@ class PlaceOrderViewController: UIViewController {
         numberOfCups.text = String(cups)
         let selectedDrinkPrice = menuInfoForOrder?.price
         priceByCups = selectedDrinkPrice! * cups
-        price.text = "\(priceByCups!)"
+        price.text = "\(priceByCups!)원"
+        let selectedMenus = [menuInfoForOrder!]
+//        for i in 1...cups{
+//
+//        }
+        let orderLists = OrderManager().addSelectedDrinks(menu: selectedMenus)
+
     }
     
     @IBAction func removeCups(_ sender: UIButton) {
         if cups == 1 {
             numberOfCups.text = String(1)
             priceByCups = menuInfoForOrder!.price * cups
-            price.text = "\(priceByCups!)"
+            price.text = "\(priceByCups!)원"
+            let selectedMenus = [menuInfoForOrder!]
+            let orderLists = OrderManager().addSelectedDrinks(menu: selectedMenus)
 
         } else {
             cups = cups - 1
             numberOfCups.text = String(cups)
             priceByCups = menuInfoForOrder!.price * cups
-            price.text = "\(priceByCups!)"
+            price.text = "\(priceByCups!)원"
 
         }
     }

@@ -396,6 +396,7 @@ enum GoodsCategory: Int, CaseIterable {
 
 // MARK: Order Manager
 var selectedDrinks: [Drink] = []
+var selectedDrinkArrays: [[Drink]] = []
 class OrderManager {
     
 //    private var orderList: [Drink, Food, Goods]
@@ -406,11 +407,17 @@ class OrderManager {
     }
     
     //c
-    // MARK: add orde
+    // MARK: add order
     func addSelectedDrink(menu: Drink) -> [Drink] {
         selectedDrinks.append(menu)
         return selectedDrinks
     }
+    
+    func addSelectedDrinks(menu: [Drink]) -> [[Drink]] {
+        selectedDrinkArrays.append(menu)
+        return selectedDrinkArrays
+    }
+    
 
     
     //r
