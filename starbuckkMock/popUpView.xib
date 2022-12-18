@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="popUpView" customModule="starbuckkMock" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="293"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="zpr-oy-u6S">
+                    <rect key="frame" x="30" y="30" width="333" height="233"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="tJx-nI-y9a">
+                            <rect key="frame" x="0.0" y="0.0" width="333" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장바구니에 추가되었습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZe-Df-g8y">
+                                    <rect key="frame" x="0.0" y="0.0" width="273" height="60"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLN-2p-eF4">
+                                    <rect key="frame" x="273" y="0.0" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="T9W-Tz-IiF"/>
+                                        <constraint firstAttribute="height" constant="60" id="ghP-Bq-V7E"/>
+                                    </constraints>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="mZe-Df-g8y" firstAttribute="leading" secondItem="tJx-nI-y9a" secondAttribute="leading" id="PBT-Mv-Ykd"/>
+                                <constraint firstAttribute="bottom" secondItem="mZe-Df-g8y" secondAttribute="bottom" id="aw3-dt-1I9"/>
+                                <constraint firstItem="mZe-Df-g8y" firstAttribute="top" secondItem="tJx-nI-y9a" secondAttribute="top" id="j8A-AR-cEL"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이미 동일한 메뉴가 장바구니에 담겨 있어 수량이 합산되었습니다. 필요 시 장바구니에서 수량을 조정해주세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dz-mK-qfo">
+                            <rect key="frame" x="0.0" y="61" width="333" height="111"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0HS-sG-AW3">
+                            <rect key="frame" x="0.0" y="173" width="333" height="60"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ejo-sY-w2R">
+                                    <rect key="frame" x="0.0" y="0.0" width="333" height="60"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fp3-2i-bk3">
+                                            <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="60"/>
+                                            <color key="tintColor" systemColor="systemGreenColor"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="장바구니 가기"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtR-rl-F6g">
+                                            <rect key="frame" x="176.66666666666663" y="0.0" width="156.33333333333337" height="60"/>
+                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="다른 메뉴 더보기"/>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="ejo-sY-w2R" firstAttribute="top" secondItem="0HS-sG-AW3" secondAttribute="top" id="Uok-PK-W5G"/>
+                                <constraint firstAttribute="trailing" secondItem="ejo-sY-w2R" secondAttribute="trailing" id="d6I-13-QY2"/>
+                                <constraint firstAttribute="bottom" secondItem="ejo-sY-w2R" secondAttribute="bottom" id="gpa-54-5aq"/>
+                                <constraint firstAttribute="height" constant="60" id="grY-aJ-F02"/>
+                                <constraint firstItem="ejo-sY-w2R" firstAttribute="leading" secondItem="0HS-sG-AW3" secondAttribute="leading" id="jip-6M-w3C"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="nxt-NS-L2A"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="0HS-sG-AW3" secondAttribute="trailing" id="78E-2R-dFU"/>
+                        <constraint firstAttribute="bottom" secondItem="0HS-sG-AW3" secondAttribute="bottom" id="DB9-FC-Leh"/>
+                        <constraint firstAttribute="trailing" secondItem="tJx-nI-y9a" secondAttribute="trailing" id="SKG-IA-NQr"/>
+                        <constraint firstItem="0Dz-mK-qfo" firstAttribute="leading" secondItem="zpr-oy-u6S" secondAttribute="leading" id="eaW-pL-RYm"/>
+                        <constraint firstAttribute="trailing" secondItem="0Dz-mK-qfo" secondAttribute="trailing" id="sjV-gH-TeC"/>
+                        <constraint firstItem="0HS-sG-AW3" firstAttribute="leading" secondItem="zpr-oy-u6S" secondAttribute="leading" id="zh6-zf-dDM"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="zpr-oy-u6S" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="6YK-fL-7c9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="zpr-oy-u6S" secondAttribute="bottom" constant="30" id="fg5-F4-jbl"/>
+                <constraint firstItem="zpr-oy-u6S" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="stP-8b-5mz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zpr-oy-u6S" secondAttribute="trailing" constant="30" id="z8D-wD-63w"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="moveToCartButton" destination="Fp3-2i-bk3" id="B4L-FH-NeX"/>
+            </connections>
+            <point key="canvasLocation" x="159.54198473282443" y="-220.07042253521129"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

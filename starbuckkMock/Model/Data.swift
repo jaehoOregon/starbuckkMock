@@ -195,8 +195,6 @@ class MenuManager {
         self.drinkList = drinkStorage
     }
 
-    //var myMenu: [Drink, Food] = []
-
     //c
     //r
     
@@ -237,13 +235,13 @@ enum Option: Int {
 }
 
 var drinkStorage: [Drink] = [
-    Drink(category: .reserveEspresso, tempOption: .hotOnly, nameKor: "크리스마스 클래식 민트 모카", nameEng: "Christmas Classic Mint Mocha", price: 10000, flavorNote: "스타벅스의 클래식인 페퍼민트 모카를 떠올리게 하는 리저브만의 에스프레소 음료 오트 밀크의 고소함과 다크 초콜릿의 쌉쌀함이 특징인 음료. 한정 기간에만 제공되는 크리스마스 원두로 즐겨보세요", notes: "", image: nil, nutritions: NutritionInfo(size: .grande, calory: 335, carbohydrate: 62, sugars: 43, natrium: 200, protein: 4, fat: 8, cholestrol: 0, transfat: 0, caffeine: 210, saturatedFat: 0.7, warning: .highCaffeine), allergens: nil, similarDrink: nil, alert: .reserveRonly),
-    Drink(category: .reserveEspresso, tempOption: .hotOnly, nameKor: "르완다 S 클래식 민트 모카", nameEng: "Rwanda S Classic Mint Mocha", price: 10000, flavorNote: "스타벅스의 클래식인 페퍼민트 모카를 떠올리게 하는 리저브만의 에스프레소 음료 오트 밀크의 고소함과 다크 초콜릿의 쌉쌀함이 특징인 음료. 한정 기간에만 제공되는 르완다 쇼리 원두로 즐겨보세요", notes: "", image: nil, nutritions: NutritionInfo(size: .grande, calory: 335, carbohydrate: 62, sugars: 43, natrium: 200, protein: 4, fat: 8, cholestrol: 0, transfat: 0, caffeine: 210, saturatedFat: 0.7, warning: .highCaffeine), allergens: nil, similarDrink: nil, alert: .reserveRonly),
-    Drink(category: .reserveEspresso, tempOption: .hotOnly, nameKor: "클래식 민트 모카", nameEng: "Classic Mint Mocha", price: 8000, flavorNote: "스타벅스의 클래식인 페퍼민트 모카를 떠올리게 하는 리저브만의 에스프레소 음료 오트 밀크의 고소함과 다크 초콜릿의 쌉쌀함이 특징인 음료.", notes: "", image: nil, nutritions: NutritionInfo(size: .grande, calory: 335, carbohydrate: 62, sugars: 43, natrium: 200, protein: 4, fat: 8, cholestrol: 0, transfat: 0, caffeine: 210, saturatedFat: 0.7, warning: .highCaffeine), allergens: nil, similarDrink: nil, alert: .reserveRonly),
-    Drink(category: .reserveDrip, tempOption: .icedOnly, nameKor: "민트 콜드 브루", nameEng: "Mint Cold Brew", price: 8000, flavorNote: "상쾌한 민트향 시럽과 잘게 갈린 얼음이 어우러져 시원함이 강렬하게 느껴지는 리저브만의 클드 브루 음료", notes: "", image: nil, nutritions: NutritionInfo(size: .grande, calory: 100, carbohydrate: 24, sugars: 23, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 415, saturatedFat: 0, warning: .highCaffeine), allergens: nil, similarDrink: nil, alert: .reserveRonly),
-    Drink(category: .reserveDrip, tempOption: .icedOnly, nameKor: "리저브 나이트로", nameEng: "Reserve Nitro", price: 7500, flavorNote: "나이트로 커피 정통의 캐스케이딩과 부드러운 콜드 크레마! 부드러운 목 넘김과 완벽한 밸런스에 커피 본연의 단맛을 경험할 수 있습니다.", notes: "", image: nil, nutritions: NutritionInfo.init(size: .tall, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 190, saturatedFat: 0, warning: .highCaffeine) /*NutritionInfo(size: .grande, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 250, saturatedFat: 0, warning: .highCaffeine)*/, allergens: nil, similarDrink: nil, alert: .comePickup),
-    Drink(category: .Espresso, tempOption: .hotAndIced, nameKor: "토피 넛 라떼", nameEng: "Toffee Nut Latter", price: 6100, flavorNote: "", notes: "스타벅스의 겨울 시그니쳐 음료 버터 향이 은은하게 느껴지는 토피와 고소한 견과류의 풍미, 진한 에스프레소가 어우러진 크리스마스 시즌 음료", image: nil, nutritions: NutritionInfo.init(size: .tall, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 190, saturatedFat: 0, warning: .highCaffeine)/* NutritionInfo(size: .grande, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 250, saturatedFat: 0, warning: .highCaffeine)*/, allergens: ["우유"], similarDrink: nil, alert: .couldBeDifferent),
-    Drink(category: .Espresso, tempOption: .hotAndIced, nameKor: "카페 모카", nameEng: "Caffe Mocha", price: 5500, flavorNote: "", notes: "진한 초콜릿 모카 시럽과 풍부한 에스프레소를 스팀 밀크와 섞어 휘핑크림으로 마무리한 음료로 진한 에스프레소와 초콜릿 맛이 어우러진 커피", image: nil, nutritions: NutritionInfo.init(size: .short, calory: 200, carbohydrate: 22, sugars: 17, natrium: 65, protein: 7, fat: 11, cholestrol: 35, transfat: 0, caffeine: 90, saturatedFat: 6, warning: .highCaffeine)/*NutritionInfo(size: .tall, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 190, saturatedFat: 0, warning: .highCaffeine), NutritionInfo(size: .grande, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 250, saturatedFat: 0, warning: .highCaffeine), NutritionInfo(size: .Venti, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 250, saturatedFat: 0, warning: .highCaffeine) */, allergens: ["우유"], similarDrink: nil, alert: .personOption)
+    Drink(category: .reserveEspresso, tempOption: .hotOnly, nameKor: "크리스마스 클래식 민트 모카", nameEng: "Christmas Classic Mint Mocha", price: 10000, flavorNote: "스타벅스의 클래식인 페퍼민트 모카를 떠올리게 하는 리저브만의 에스프레소 음료 오트 밀크의 고소함과 다크 초콜릿의 쌉쌀함이 특징인 음료. 한정 기간에만 제공되는 크리스마스 원두로 즐겨보세요", notes: "", image: UIImage(named: "ChristmasClassicMintMocha")!, nutritions: NutritionInfo(size: .grande, calory: 335, carbohydrate: 62, sugars: 43, natrium: 200, protein: 4, fat: 8, cholestrol: 0, transfat: 0, caffeine: 210, saturatedFat: 0.7, warning: .highCaffeine), allergens: nil, similarDrink: nil, alert: .reserveRonly),
+    Drink(category: .reserveEspresso, tempOption: .hotOnly, nameKor: "르완다 S 클래식 민트 모카", nameEng: "Rwanda S Classic Mint Mocha", price: 10000, flavorNote: "스타벅스의 클래식인 페퍼민트 모카를 떠올리게 하는 리저브만의 에스프레소 음료 오트 밀크의 고소함과 다크 초콜릿의 쌉쌀함이 특징인 음료. 한정 기간에만 제공되는 르완다 쇼리 원두로 즐겨보세요", notes: "", image: UIImage(named: "RwandaSClassicMintMocha"), nutritions: NutritionInfo(size: .grande, calory: 335, carbohydrate: 62, sugars: 43, natrium: 200, protein: 4, fat: 8, cholestrol: 0, transfat: 0, caffeine: 210, saturatedFat: 0.7, warning: .highCaffeine), allergens: nil, similarDrink: nil, alert: .reserveRonly),
+    Drink(category: .reserveEspresso, tempOption: .hotOnly, nameKor: "클래식 민트 모카", nameEng: "Classic Mint Mocha", price: 8000, flavorNote: "스타벅스의 클래식인 페퍼민트 모카를 떠올리게 하는 리저브만의 에스프레소 음료 오트 밀크의 고소함과 다크 초콜릿의 쌉쌀함이 특징인 음료.", notes: "", image: UIImage(named: "ClassicMintMocha"), nutritions: NutritionInfo(size: .grande, calory: 335, carbohydrate: 62, sugars: 43, natrium: 200, protein: 4, fat: 8, cholestrol: 0, transfat: 0, caffeine: 210, saturatedFat: 0.7, warning: .highCaffeine), allergens: nil, similarDrink: nil, alert: .reserveRonly),
+    Drink(category: .reserveDrip, tempOption: .icedOnly, nameKor: "민트 콜드 브루", nameEng: "Mint Cold Brew", price: 8000, flavorNote: "상쾌한 민트향 시럽과 잘게 갈린 얼음이 어우러져 시원함이 강렬하게 느껴지는 리저브만의 클드 브루 음료", notes: "", image: UIImage(named: "MintColdBrew"), nutritions: NutritionInfo(size: .grande, calory: 100, carbohydrate: 24, sugars: 23, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 415, saturatedFat: 0, warning: .highCaffeine), allergens: nil, similarDrink: nil, alert: .reserveRonly),
+    Drink(category: .reserveDrip, tempOption: .icedOnly, nameKor: "리저브 나이트로", nameEng: "Reserve Nitro", price: 7500, flavorNote: "나이트로 커피 정통의 캐스케이딩과 부드러운 콜드 크레마! 부드러운 목 넘김과 완벽한 밸런스에 커피 본연의 단맛을 경험할 수 있습니다.", notes: "", image: UIImage(named: "ReserveNitro"), nutritions: NutritionInfo.init(size: .tall, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 190, saturatedFat: 0, warning: .highCaffeine) /*NutritionInfo(size: .grande, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 250, saturatedFat: 0, warning: .highCaffeine)*/, allergens: nil, similarDrink: nil, alert: .comePickup),
+    Drink(category: .Espresso, tempOption: .hotAndIced, nameKor: "토피 넛 라떼", nameEng: "Toffee Nut Latter", price: 6100, flavorNote: "", notes: "스타벅스의 겨울 시그니쳐 음료 버터 향이 은은하게 느껴지는 토피와 고소한 견과류의 풍미, 진한 에스프레소가 어우러진 크리스마스 시즌 음료", image: UIImage(named: "ToffeeNutLatter"), nutritions: NutritionInfo.init(size: .tall, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 190, saturatedFat: 0, warning: .highCaffeine)/* NutritionInfo(size: .grande, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 250, saturatedFat: 0, warning: .highCaffeine)*/, allergens: ["우유"], similarDrink: nil, alert: .couldBeDifferent),
+    Drink(category: .Espresso, tempOption: .hotAndIced, nameKor: "카페 모카", nameEng: "Caffe Mocha", price: 5500, flavorNote: "", notes: "진한 초콜릿 모카 시럽과 풍부한 에스프레소를 스팀 밀크와 섞어 휘핑크림으로 마무리한 음료로 진한 에스프레소와 초콜릿 맛이 어우러진 커피", image: UIImage(named: "CaffeMocha"), nutritions: NutritionInfo.init(size: .short, calory: 200, carbohydrate: 22, sugars: 17, natrium: 65, protein: 7, fat: 11, cholestrol: 35, transfat: 0, caffeine: 90, saturatedFat: 6, warning: .highCaffeine)/*NutritionInfo(size: .tall, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 190, saturatedFat: 0, warning: .highCaffeine), NutritionInfo(size: .grande, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 250, saturatedFat: 0, warning: .highCaffeine), NutritionInfo(size: .Venti, calory: 5, carbohydrate: 0, sugars: 0, natrium: 0, protein: 0, fat: 0, cholestrol: 0, transfat: 0, caffeine: 250, saturatedFat: 0, warning: .highCaffeine) */, allergens: ["우유"], similarDrink: nil, alert: .personOption)
     ]
 
 // MARK: Food 데이터
@@ -394,3 +392,34 @@ enum GoodsCategory: Int, CaseIterable {
         }
     }*/
 }
+
+
+// MARK: Order Manager
+var selectedDrinks: [Drink] = []
+class OrderManager {
+    
+//    private var orderList: [Drink, Food, Goods]
+    private var selectedDrinkList: [Drink]
+
+    init() {
+        self.selectedDrinkList = selectedDrinks
+    }
+    
+    //c
+    // MARK: add orde
+    func addSelectedDrink(menu: Drink) -> [Drink] {
+        selectedDrinks.append(menu)
+        return selectedDrinks
+    }
+
+    
+    //r
+    func readSelectedDrink() -> [Drink] {
+        return selectedDrinkList
+    }
+    
+    //u
+    //d
+    
+}
+

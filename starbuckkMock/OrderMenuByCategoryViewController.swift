@@ -74,6 +74,7 @@ extension OrderMenuByCategoryViewController: UITableViewDataSource {
         cell.nameKor.text = menuList[indexPath.row].nameKor
         cell.nameEng.text = menuList[indexPath.row].nameEng
         cell.price.text = String(menuList[indexPath.row].price)
+        cell.menuImage.image = menuList[indexPath.row].image
         return cell
     }
 }
