@@ -16,25 +16,23 @@ class PaymentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        paymentTableView.delegate = self
-        paymentTableView.dataSource = self
+//        paymentTableView.delegate = self
+//        paymentTableView.dataSource = self
 
 
     }
 }
 
-extension PaymentViewController: UITableViewDelegate {
-    
-}
+//extension PaymentViewController: UITableViewDelegate {
+//
+//}
 
-extension PaymentViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    
-    
-}
+//extension PaymentViewController: UITableViewDataSource {
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        <#code#>
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
+//}

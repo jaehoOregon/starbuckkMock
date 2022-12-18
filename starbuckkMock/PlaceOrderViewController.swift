@@ -35,7 +35,8 @@ class PlaceOrderViewController: UIViewController {
     @IBAction func addCups(_ sender: UIButton) {
         cups = cups + 1
         numberOfCups.text = String(cups)
-        priceByCups = priceByCups! * cups
+        let selectedDrinkPrice = menuInfoForOrder?.price
+        priceByCups = selectedDrinkPrice! * cups
         price.text = "\(priceByCups!)"
     }
     
@@ -56,9 +57,9 @@ class PlaceOrderViewController: UIViewController {
     
     @IBAction func cart(_ sender: UIButton) {
      
-        self.popUp = popUpView(frame: self.view.frame, inView: self)
-        popUp.moveToCartButton.addTarget(self, action: #selector(moveToCartButtonClicked), for: .touchUpInside)
-        self.view.addSubview(popUp)
+//        self.popUp = popUpView(frame: self.view.frame, inView: self)
+//        popUp.moveToCartButton.addTarget(self, action: #selector(moveToCartButtonClicked), for: .touchUpInside)
+//        self.view.addSubview(popUp)
     }
     
     @objc func moveToCartButtonClicked() {
